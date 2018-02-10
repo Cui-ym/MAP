@@ -8,8 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		3266C628FD22EBFE9D75C1FC /* libPods-地图.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DAA3F23248CD1BA9AC4EDFF9 /* libPods-地图.a */; };
+		581D6496202D3E6400920812 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 581D6495202D3E6300920812 /* Main.storyboard */; };
+		581D649B202E8B3700920812 /* MAPCommentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 581D649A202E8B3700920812 /* MAPCommentView.m */; };
+		581D649F202E8D3100920812 /* MAPMessageTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 581D649E202E8D3100920812 /* MAPMessageTableViewCell.m */; };
+		581D64A3202EE55C00920812 /* cancel.png in Resources */ = {isa = PBXBuildFile; fileRef = 581D64A2202EE55C00920812 /* cancel.png */; };
 		58D413ED202986ED00277537 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 58D413EC202986ED00277537 /* AppDelegate.m */; };
-		58D413F3202986ED00277537 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 58D413F1202986ED00277537 /* Main.storyboard */; };
 		58D413F5202986ED00277537 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 58D413F4202986ED00277537 /* Assets.xcassets */; };
 		58D413F8202986ED00277537 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 58D413F6202986ED00277537 /* LaunchScreen.storyboard */; };
 		58D413FB202986ED00277537 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 58D413FA202986ED00277537 /* main.m */; };
@@ -90,7 +93,6 @@
 		58D414F720298A0500277537 /* start.png in Resources */ = {isa = PBXBuildFile; fileRef = 58D414E320298A0500277537 /* start.png */; };
 		58D414F820298A0500277537 /* image.png in Resources */ = {isa = PBXBuildFile; fileRef = 58D414E420298A0500277537 /* image.png */; };
 		58D4150020298BBC00277537 /* MAPHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 58D414FF20298BBC00277537 /* MAPHomeViewController.m */; };
-		58D4150720298C7200277537 /* MAPPaoPaoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 58D4150620298C7200277537 /* MAPPaoPaoView.m */; };
 		58D4150D20298D3600277537 /* MAPAnnotationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 58D4150C20298D3600277537 /* MAPAnnotationView.m */; };
 		58D4151120298E4800277537 /* MAPResultModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 58D4151020298E4800277537 /* MAPResultModel.m */; };
 		58D4151420298E7400277537 /* MAPGetPointModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 58D4151320298E7400277537 /* MAPGetPointModel.m */; };
@@ -118,10 +120,15 @@
 
 /* Begin PBXFileReference section */
 		4D690EE13870CBC5412868A8 /* Pods-地图.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-地图.debug.xcconfig"; path = "Pods/Target Support Files/Pods-地图/Pods-地图.debug.xcconfig"; sourceTree = "<group>"; };
+		581D6495202D3E6300920812 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		581D6499202E8B3700920812 /* MAPCommentView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MAPCommentView.h; sourceTree = "<group>"; };
+		581D649A202E8B3700920812 /* MAPCommentView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MAPCommentView.m; sourceTree = "<group>"; };
+		581D649D202E8D3100920812 /* MAPMessageTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MAPMessageTableViewCell.h; sourceTree = "<group>"; };
+		581D649E202E8D3100920812 /* MAPMessageTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MAPMessageTableViewCell.m; sourceTree = "<group>"; };
+		581D64A2202EE55C00920812 /* cancel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cancel.png; sourceTree = "<group>"; };
 		58D413E8202986ED00277537 /* 地图.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "地图.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		58D413EB202986ED00277537 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		58D413EC202986ED00277537 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		58D413F2202986ED00277537 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		58D413F4202986ED00277537 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		58D413F7202986ED00277537 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		58D413F9202986ED00277537 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -268,8 +275,6 @@
 		58D414E420298A0500277537 /* image.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = image.png; sourceTree = "<group>"; };
 		58D414FE20298BBC00277537 /* MAPHomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MAPHomeViewController.h; sourceTree = "<group>"; };
 		58D414FF20298BBC00277537 /* MAPHomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MAPHomeViewController.m; sourceTree = "<group>"; };
-		58D4150520298C7200277537 /* MAPPaoPaoView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MAPPaoPaoView.h; sourceTree = "<group>"; };
-		58D4150620298C7200277537 /* MAPPaoPaoView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MAPPaoPaoView.m; sourceTree = "<group>"; };
 		58D4150B20298D3600277537 /* MAPAnnotationView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MAPAnnotationView.h; sourceTree = "<group>"; };
 		58D4150C20298D3600277537 /* MAPAnnotationView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MAPAnnotationView.m; sourceTree = "<group>"; };
 		58D4150F20298E4800277537 /* MAPResultModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MAPResultModel.h; sourceTree = "<group>"; };
@@ -312,6 +317,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		581D649C202E8CCB00920812 /* CommentView */ = {
+			isa = PBXGroup;
+			children = (
+				581D6499202E8B3700920812 /* MAPCommentView.h */,
+				581D649A202E8B3700920812 /* MAPCommentView.m */,
+				581D649D202E8D3100920812 /* MAPMessageTableViewCell.h */,
+				581D649E202E8D3100920812 /* MAPMessageTableViewCell.m */,
+			);
+			path = CommentView;
+			sourceTree = "<group>";
+		};
 		58D413DF202986ED00277537 = {
 			isa = PBXGroup;
 			children = (
@@ -342,9 +358,9 @@
 				58D414FA20298B7B00277537 /* MAPHomePage */,
 				58D413EB202986ED00277537 /* AppDelegate.h */,
 				58D413EC202986ED00277537 /* AppDelegate.m */,
-				58D413F1202986ED00277537 /* Main.storyboard */,
 				58D413F4202986ED00277537 /* Assets.xcassets */,
 				58D413F6202986ED00277537 /* LaunchScreen.storyboard */,
+				581D6495202D3E6300920812 /* Main.storyboard */,
 				58D413F9202986ED00277537 /* Info.plist */,
 				58D413FA202986ED00277537 /* main.m */,
 			);
@@ -573,6 +589,7 @@
 		58D414D020298A0500277537 /* 素材 */ = {
 			isa = PBXGroup;
 			children = (
+				581D64A2202EE55C00920812 /* cancel.png */,
 				58D414D120298A0500277537 /* info.png */,
 				58D414D220298A0500277537 /* add.png */,
 				58D414D320298A0500277537 /* link.png */,
@@ -633,6 +650,7 @@
 		58D414FD20298B7B00277537 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				581D649C202E8CCB00920812 /* CommentView */,
 				58D4151E202990F800277537 /* HomeView */,
 				58D4150120298C2500277537 /* PointView */,
 			);
@@ -644,8 +662,6 @@
 			children = (
 				58D4150B20298D3600277537 /* MAPAnnotationView.h */,
 				58D4150C20298D3600277537 /* MAPAnnotationView.m */,
-				58D4150520298C7200277537 /* MAPPaoPaoView.h */,
-				58D4150620298C7200277537 /* MAPPaoPaoView.m */,
 			);
 			path = PointView;
 			sourceTree = "<group>";
@@ -800,6 +816,7 @@
 				58D413F8202986ED00277537 /* LaunchScreen.storyboard in Resources */,
 				58D414F220298A0500277537 /* compass.png in Resources */,
 				58D414EE20298A0500277537 /* comment.png in Resources */,
+				581D6496202D3E6400920812 /* Main.storyboard in Resources */,
 				58D413F5202986ED00277537 /* Assets.xcassets in Resources */,
 				58D414AB202989CB00277537 /* README.md in Resources */,
 				58D4149A202989CB00277537 /* README.md in Resources */,
@@ -816,7 +833,7 @@
 				58D414F020298A0500277537 /* QQ.png in Resources */,
 				58D414EF20298A0500277537 /* video.png in Resources */,
 				58D414F120298A0500277537 /* local.png in Resources */,
-				58D413F3202986ED00277537 /* Main.storyboard in Resources */,
+				581D64A3202EE55C00920812 /* cancel.png in Resources */,
 				58D414F520298A0500277537 /* priv.png in Resources */,
 				58D414EB20298A0500277537 /* comt.png in Resources */,
 				58D414E520298A0500277537 /* info.png in Resources */,
@@ -915,7 +932,9 @@
 				58D414C0202989CB00277537 /* MASConstraintMaker.m in Sources */,
 				58D4149D202989CB00277537 /* AFNetworkActivityIndicatorManager.m in Sources */,
 				58D414C4202989CB00277537 /* MASConstraint.m in Sources */,
+				581D649F202E8D3100920812 /* MAPMessageTableViewCell.m in Sources */,
 				58D4149C202989CB00277537 /* UIRefreshControl+AFNetworking.m in Sources */,
+				581D649B202E8B3700920812 /* MAPCommentView.m in Sources */,
 				58D414A5202989CB00277537 /* AFHTTPSessionManager.m in Sources */,
 				58D414C1202989CB00277537 /* MASLayoutConstraint.m in Sources */,
 				58D414BD202989CB00277537 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
@@ -955,7 +974,6 @@
 				58D414AC202989CB00277537 /* SDWebImageManager.m in Sources */,
 				58D4151A20298FB200277537 /* MAPCoordinateManager.m in Sources */,
 				58D413ED202986ED00277537 /* AppDelegate.m in Sources */,
-				58D4150720298C7200277537 /* MAPPaoPaoView.m in Sources */,
 				58D414A2202989CB00277537 /* AFAutoPurgingImageCache.m in Sources */,
 				58D414B6202989CB00277537 /* NSData+ImageContentType.m in Sources */,
 				58D414A3202989CB00277537 /* AFImageDownloader.m in Sources */,
@@ -994,14 +1012,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		58D413F1202986ED00277537 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				58D413F2202986ED00277537 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		58D413F6202986ED00277537 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

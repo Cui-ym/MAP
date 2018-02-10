@@ -10,8 +10,6 @@
 
 @interface MAPAnnotationView ()
 
-@property (nonatomic, strong, readwrite) MAPPaoPaoView *paoView;
-
 @end
 
 @implementation MAPAnnotationView
@@ -19,31 +17,66 @@
 - (id)initWithAnnotation:(id<BMKAnnotation>)annotation reuseIdentifier:(NSString *)reuseIdentifier{
     self = [super initWithAnnotation:annotation reuseIdentifier:reuseIdentifier];
     if (self) {
-        
         self.image = [UIImage imageNamed:@"info.png"];
-        
+        // 设置泡泡的偏移量
+        self.calloutOffset = CGPointMake(60, 30);
+        [self initPaoPaoView];
     }
     return self;
 }
 
-- (void)setSelected:(BOOL)selected {
-    NSLog(@"点击");
-    if (self.selected == selected) {
-        return;
-    }
+- (void)initPaoPaoView {
+    self.paoView = [[UIView alloc]initWithFrame:CGRectMake(0, 0, 140, 140)];
+    self.paoView.backgroundColor = [UIColor clearColor];
     
-    if (selected) {
-        if (self.paoView == nil) {
-            
-            self.paoView = [[MAPPaoPaoView alloc] initWithFrame:CGRectMake(-80, -80, 140, 140)];
-        }
-        
-        [self addSubview:self.paoView];
+    self.msgButton.tag = 10001;
+    self.msgButton = [UIButton buttonWithType:UIButtonTypeCustom];
+    self.msgButton.frame = CGRectMake(0, 0, 45, 45);
+    [self.msgButton setImage:[UIImage imageNamed:@"comment"] forState:UIControlStateNormal];
+    [self.msgButton addTarget:self action:@selector(addCommentView:) forControlEvents:UIControlEventTouchUpInside];
+    [self.paoView addSubview:self.msgButton];
+    
+    self.imgButton.tag = 10002;
+    self.imgButton = [UIButton buttonWithType:UIButtonTypeCustom];
+    self.imgButton.frame = CGRectMake(45, 20, 45, 45);
+    [self.imgButton setImage:[UIImage imageNamed:@"image"] forState:UIControlStateNormal];
+    [self.imgButton addTarget:self action:@selector(addCommentView:) forControlEvents:UIControlEventTouchUpInside];
+    [self.paoView addSubview:self.imgButton];
+    
+    self.voiceButton.tag = 10003;
+    self.voiceButton = [UIButton buttonWithType:UIButtonTypeCustom];
+    self.voiceButton.frame = CGRectMake(80, 55, 45, 45);
+    [self.voiceButton setImage:[UIImage imageNamed:@"voice"] forState:UIControlStateNormal];
+    [self.voiceButton addTarget:self action:@selector(addCommentView:) forControlEvents:UIControlEventTouchUpInside];
+    [self.paoView addSubview:self.voiceButton];
+    
+    self.videoButton.tag = 10004;
+    self.videoButton = [UIButton buttonWithType:UIButtonTypeCustom];
+    self.videoButton.frame = CGRectMake(100, 100, 45, 45);
+    [self.videoButton setImage:[UIImage imageNamed:@"video"] forState:UIControlStateNormal];
+    [self.videoButton addTarget:self action:@selector(addCommentView:) forControlEvents:UIControlEventTouchUpInside];
+    [self.paoView addSubview:self.videoButton];
+    
+    self.paopaoView = [[BMKActionPaopaoView alloc]initWithCustomView:self.paoView];
+    self.paopaoView.frame = CGRectMake(0, 0, 200, 140);
+    
+}
+
+- (void)addCommentView:(UIButton *)button {
+    NSString *str = @"";
+    if (button.tag == 10001) {
+        str = @"message";
+    } else if (button.tag == 10002) {
+        str = @"image";
+    } else if (button.tag == 10003) {
+        str = @"voice";
     } else {
-        [self.paoView removeFromSuperview];
+        str = @"video";
     }
-    
-    [super setSelected:selected];
+    NSLog(@"--点击按钮%@", str);
+    if ([_delegate respondsToSelector:@selector(addCommentView:)]) {
+        [_delegate addCommentView:str];
+    }
 }
 
 @end

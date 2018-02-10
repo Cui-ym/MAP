@@ -29,7 +29,7 @@ static MAPCoordinateManager *manager = nil;
         
     } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         NSError *error;
-        NSLog(@"resp:%@",responseObject);
+//        NSLog(@"resp:%@",responseObject);
         MAPCoordinateModel *model = [[MAPCoordinateModel alloc] initWithDictionary:responseObject error:&error];
         if (error) {
             errorBlock(error);

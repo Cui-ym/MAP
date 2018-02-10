@@ -7,7 +7,31 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <BaiduMapAPI_Map/BMKMapComponent.h>
+
+@protocol MAPHomeViewDelegate <NSObject>
+
+@required
+
+@end
 
 @interface MAPHomeView : UIView
 
+@property (nonatomic, weak) id<MAPHomeViewDelegate> delegate;
+
+@property (nonatomic, strong) BMKMapView *mapView;
+
+@property (nonatomic, strong) UIButton *addButton;
+
+@property (nonatomic, strong) UIView *messageView;
+
+@property (nonatomic, strong) UIButton *msgButton;
+
+@property (nonatomic, strong) UIButton *imgButton;
+
+@property (nonatomic, strong) UIButton *voiceButton;
+
+@property (nonatomic, strong) UIButton *videoButton;
+
+- (void)initMessageView;
 @end
