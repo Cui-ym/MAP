@@ -19,7 +19,7 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     self.mapManager = [[BMKMapManager alloc] init];
-    BOOL ret = [self.mapManager start:@"Fd5c5RlGYgDRTn3vVKjoPsyIB0hYusAC" generalDelegate:nil];
+    BOOL ret = [self.mapManager start:@"jF7Xm2rT4EpOtPXMVEaEIsRCG1BRPGLA" generalDelegate:nil];
     if (!ret) {
         NSLog(@"Map is not Ready");
     }
