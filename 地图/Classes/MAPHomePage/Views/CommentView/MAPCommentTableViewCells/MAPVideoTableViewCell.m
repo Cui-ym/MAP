@@ -1,14 +1,14 @@
 //
-//  MAPAddTextCommentTableViewCell.m
+//  MAPVideoTableViewCell.m
 //  地图
 //
-//  Created by 崔一鸣 on 2018/2/28.
+//  Created by 崔一鸣 on 2018/4/22.
 //  Copyright © 2018年 崔一鸣. All rights reserved.
 //
 
-#import "MAPAddTextCommentTableViewCell.h"
+#import "MAPVideoTableViewCell.h"
 
-@implementation MAPAddTextCommentTableViewCell
+@implementation MAPVideoTableViewCell
 
 - (void)awakeFromNib {
     [super awakeFromNib];

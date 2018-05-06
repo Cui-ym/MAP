@@ -8,11 +8,24 @@
 
 #import <UIKit/UIKit.h>
 
+@protocol MAPMessageTableViewCellDelegate<NSObject>
+
+@optional
+- (void)clickButton:(UIButton *)sender type:(NSString *)type timeLabel:(UILabel *)timeLabel;
+
+@end
+
 @interface MAPMessageTableViewCell : UITableViewCell
+
+@property (nonatomic, weak) id<MAPMessageTableViewCellDelegate> delegate;
 
 @property (nonatomic, strong) UIImageView *headImageView;
 
 @property (nonatomic, strong) UILabel *nicknameLabel;
+
+@property (nonatomic, assign) long commentCount;
+
+@property (nonatomic, assign) long likeCount;
 
 @property (nonatomic, strong) UILabel *timeLabel;
 
