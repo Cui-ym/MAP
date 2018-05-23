@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "MAPImageCollectionViewCell.h"
 
 @protocol MAPImageTableViewCellDelegate <NSObject>
 
@@ -14,7 +15,7 @@
 
 @end
 
-@interface MAPImageTableViewCell : UITableViewCell <UICollectionViewDelegate, UICollectionViewDataSource>
+@interface MAPImageTableViewCell : UITableViewCell <UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout>
 
 @property (nonatomic, weak) id <MAPImageTableViewCellDelegate> delegate;
 
@@ -26,11 +27,17 @@
 
 @property (nonatomic, assign) long likeCount;
 
+@property (nonatomic, assign) int imageCount;
+
+@property (nonatomic, assign) int flag;
+
+@property (nonatomic, assign) float imageHeight;
+
 @property (nonatomic, strong) UILabel *timeLabel;
 
 @property (nonatomic, copy) NSArray *imageArray;
 
-@property (nonatomic, strong) UIImageView *photoComment;
+@property (nonatomic, strong) UIImageView *photoCommentImageView;
 
 @property (nonatomic, strong) UICollectionView *imageCollectionView;
 
@@ -40,6 +47,6 @@
 
 @property (nonatomic, strong) UIButton *commentBtn;
 
-+(CGFloat)cellHeightWithComment:(NSString *)comment size:(CGSize)contextSize;
++(CGFloat)cellHeightWithImageArray:(NSArray *)imageArray size:(CGSize)contextSize;
 
 @end

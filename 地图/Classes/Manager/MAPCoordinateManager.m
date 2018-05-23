@@ -25,11 +25,9 @@ static MAPCoordinateManager *manager = nil;
 
 - (void)fetchCoordinateDataWithPointID:(int)ID type:(int)type succeed:(MAPCoordinateHandle)succeedBlock error:(ErrorHandle)errorBlock{
     NSString *URL = [NSString stringWithFormat:@"http://47.95.207.40/markMap/none/getMessage/%d", ID];
-//    NSString *str1 = [URL stringByAddingPercentEncodingWithAllowedCharacters:[NSCharacterSet URLQueryAllowedCharacterSet]];
-//    NSLog(@"%@", str1);
     
     NSDictionary *param = @{@"type":[NSNumber numberWithInt:type]};
-    NSLog(@"获取评论信息");
+//    NSLog(@"获取评论信息");
     [[AFHTTPSessionManager manager] POST:URL parameters:param progress:^(NSProgress * _Nonnull uploadProgress) {
         
     } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
@@ -59,7 +57,7 @@ static MAPCoordinateManager *manager = nil;
     [[AFHTTPSessionManager manager] POST:URL parameters:param progress:^(NSProgress * _Nonnull uploadProgress) {
         
     } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
-        NSLog(@"response : %@", responseObject);
+//        NSLog(@"response : %@", responseObject);
         NSError *error;
         MAPGetPointModel *model = [[MAPGetPointModel alloc] initWithDictionary:responseObject error:&error];
         if (error) {
@@ -76,5 +74,7 @@ static MAPCoordinateManager *manager = nil;
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
         errorBlock(error);
     }];
+    
 }
+
 @end

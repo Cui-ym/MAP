@@ -7,6 +7,9 @@
 //
 
 #import "MAPImageTableViewCell.h"
+#import "MAPImageCollectionViewCell.h"
+#import "SDWebImageCompat.h"
+#import "UIImageView+WebCache.h"
 #import "Masonry.h"
 
 #define Height self.frame.size.height
@@ -14,9 +17,28 @@
 
 @implementation MAPImageTableViewCell
 
++(CGFloat)cellHeightWithImageArray:(NSArray *)imageArray size:(CGSize)contextSize {
+    double imageHeight = 100.0;
+    if (imageArray.count == 1) {
+        imageHeight = 100.0;
+    } else if (imageArray.count == 2 || imageArray.count == 3) {
+        imageHeight = contextSize.width * 0.2;
+    } else if (imageArray.count >= 4 && imageArray.count <= 6) {
+        imageHeight = contextSize.width * 0.4 + 5;
+    } else if (imageArray.count >= 7 && imageArray.count <= 9) {
+        imageHeight = contextSize.width * 0.6 + 10;
+    }
+    // 10 nickLibel 距离顶部距离
+    // 30 nickLibel 高度
+    imageHeight = imageHeight + 10 + 30 + 15 + 30;
+    return imageHeight;
+}
+
 - (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier {
     self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
     if (self) {
+        _flag = 1;
+        
         self.headImageView = [[UIImageView alloc] init];
         [self.contentView addSubview:_headImageView];
         
@@ -28,9 +50,6 @@
         
         self.commentBtn = [[UIButton alloc] init];
         [self.contentView addSubview:_commentBtn];
-        
-        self.photoComment = [[UIImageView alloc] init];
-        [self.contentView addSubview:_photoComment];
         
         self.likeBtn = [[UIButton alloc] init];
         [self.contentView addSubview:_likeBtn];
@@ -60,35 +79,53 @@
     }];
     self.nicknameLabel.font = [UIFont systemFontOfSize:14 weight:UIFontWeightThin];
     self.nicknameLabel.textColor = [UIColor colorWithRed:0.5f green:0.5f blue:0.5f alpha:1.00f];
-    
-    if (_imageArray.count == 1) {
-        [self.photoComment mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.left.equalTo(_nicknameLabel.mas_left);
-            make.top.equalTo(_nicknameLabel.mas_bottom).offset(5);
-            make.right.equalTo(self.contentView.mas_right).offset(-20);
-        }];
-    } else if (_imageArray.count == 2 || _imageArray.count == 4){
-        // 设置瀑布流
-        self.collectionLayout = [[UICollectionViewFlowLayout alloc] init];
-        _collectionLayout.itemSize = CGSizeMake(Width / 3 - 30, Width / 3 - 30);
-        _collectionLayout.minimumLineSpacing = 10;
-        _collectionLayout.minimumInteritemSpacing = 5;
-        self.imageCollectionView = [[UICollectionView alloc] initWithFrame:CGRectMake(10, 10, Width * 0.7, Width / 3 - 10) collectionViewLayout:_collectionLayout];
-        self.imageCollectionView.delegate = self;
-        self.imageCollectionView.dataSource = self;
-        self.imageCollectionView.backgroundColor = [UIColor clearColor];
-    } else {
-        // 设置瀑布流
-        self.collectionLayout = [[UICollectionViewFlowLayout alloc] init];
-        _collectionLayout.itemSize = CGSizeMake(Width / 3 - 30, Width / 3 - 30);
-        _collectionLayout.minimumLineSpacing = 10;
-        _collectionLayout.minimumInteritemSpacing = 5;
-        self.imageCollectionView = [[UICollectionView alloc] initWithFrame:CGRectMake(10, 10, Width - 20, Width / 3 - 10) collectionViewLayout:_collectionLayout];
-        self.imageCollectionView.delegate = self;
-        self.imageCollectionView.dataSource = self;
-        self.imageCollectionView.backgroundColor = [UIColor clearColor];
+    if (_flag == 0) {
+        _flag = 1;
+        if (_imageCount == 1) {
+            self.photoCommentImageView = [[UIImageView alloc] init];
+            [self.contentView addSubview:_photoCommentImageView];
+            [self.photoCommentImageView mas_makeConstraints:^(MASConstraintMaker *make) {
+                make.top.equalTo(self.contentView.mas_top).offset(40);
+                make.left.equalTo(self.contentView.mas_left).offset(Width * 0.25);
+                make.width.equalTo(self.contentView.mas_width).multipliedBy(0.4);
+                make.height.mas_equalTo(100.0);
+            }];
+            self.photoCommentImageView.backgroundColor = [UIColor whiteColor];
+            self.photoCommentImageView.contentMode = UIViewContentModeScaleAspectFit;
+        } else if (_imageCount == 2 || _imageCount == 4){
+            // 设置瀑布流
+            self.collectionLayout = [[UICollectionViewFlowLayout alloc] init];
+            _collectionLayout.minimumLineSpacing = 10;
+            _collectionLayout.minimumInteritemSpacing = 5;
+            self.imageCollectionView = [[UICollectionView alloc] initWithFrame:CGRectMake(Width * 0.25, 40, Width * 0.4 + 5, (Width * 0.2 + 5) * _imageArray.count / 2) collectionViewLayout:_collectionLayout];
+            self.imageCollectionView.backgroundColor = [UIColor clearColor];
+            self.imageCollectionView.scrollEnabled = NO;
+            [self.contentView addSubview:self.imageCollectionView];
+            [self.imageCollectionView registerClass:[MAPImageCollectionViewCell class] forCellWithReuseIdentifier:@"imageCell"];
+            self.imageCollectionView.delegate = self;
+            self.imageCollectionView.dataSource = self;
+        } else {
+            // 设置瀑布流
+            self.collectionLayout = [[UICollectionViewFlowLayout alloc] init];
+            _collectionLayout.minimumLineSpacing = 10;
+            _collectionLayout.minimumInteritemSpacing = 5;
+            unsigned long num = _imageArray.count % 3;
+            if (num != 0) {
+                num = _imageCount / 3 + 1;
+            } else {
+                num = _imageCount / 3;
+            }
+            NSLog(@"--%d--", _imageCount);
+            self.imageCollectionView = [[UICollectionView alloc] initWithFrame:CGRectMake(Width * 0.25, 40, Width * 0.6 + 10, (Width * 0.2 + 5) * num) collectionViewLayout:_collectionLayout];
+            self.imageCollectionView.backgroundColor = [UIColor clearColor];
+            self.imageCollectionView.scrollEnabled = NO;
+            [self.contentView addSubview:self.imageCollectionView];
+            [self.imageCollectionView registerClass:[MAPImageCollectionViewCell class] forCellWithReuseIdentifier:@"imageCell"];
+            self.imageCollectionView.delegate = self;
+            self.imageCollectionView.dataSource = self;
+        }
+        
     }
-    
     
     [self.timeLabel mas_makeConstraints:^(MASConstraintMaker *make) {
         make.left.equalTo(_nicknameLabel.mas_left);
@@ -108,7 +145,7 @@
     [self.commentBtn setTitle:[NSString stringWithFormat:@"（%ld）", _commentCount] forState:UIControlStateNormal];
     self.commentBtn.titleLabel.font = [UIFont systemFontOfSize:15];
     [self.commentBtn setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
-    [self.likeBtn addTarget:self action:@selector(clickCommentButton:) forControlEvents:UIControlEventTouchUpInside];
+    [self.commentBtn addTarget:self action:@selector(clickCommentButton:) forControlEvents:UIControlEventTouchUpInside];
     
     [self.likeBtn mas_makeConstraints:^(MASConstraintMaker *make) {
         make.right.equalTo(_commentBtn.mas_left);
@@ -125,7 +162,7 @@
 }
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
-    return self.imageArray.count;
+    return _imageCount;
 }
 
 - (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView {
@@ -133,7 +170,21 @@
 }
 
 - (__kindof UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
+    MAPImageCollectionViewCell *imageCollectionViewCell = [collectionView dequeueReusableCellWithReuseIdentifier:@"imageCell" forIndexPath:indexPath];
+    [imageCollectionViewCell.imageView sd_setImageWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"http://47.95.207.40/markMapFile%@", _imageArray[indexPath.row]]] placeholderImage:nil];
     
+    return imageCollectionViewCell;
+}
+
+- (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath {
+    if (_imageCount == 1) {
+        NSLog(@"更新大小 %f", _imageHeight);
+        CGSize size = CGSizeMake(Width * 0.4, _imageHeight);
+        return size;
+    } else {
+        CGSize size = CGSizeMake(Width * 0.2, Width * 0.2);
+        return size;
+    }
 }
 
 - (void)clickLikeButton:(UIButton *)sender {
@@ -143,10 +194,11 @@
 }
 
 - (void)clickCommentButton:(UIButton *)sender {
-    if ([_delegate respondsToSelector:@selector(clickCommentButton:)]) {
+    if ([_delegate respondsToSelector:@selector(clickButton: type: timeLabel:)]) {
         [_delegate clickButton:sender type:@"comment" timeLabel:_timeLabel];
     }
 }
+
 - (void)awakeFromNib {
     [super awakeFromNib];
     // Initialization code

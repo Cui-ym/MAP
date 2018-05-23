@@ -1,20 +1,23 @@
 //
-//  MAPMessageTableViewCell.m
+//  MAPVideoTableViewCell.m
 //  地图
 //
-//  Created by 崔一鸣 on 2018/2/10.
+//  Created by 崔一鸣 on 2018/4/22.
 //  Copyright © 2018年 崔一鸣. All rights reserved.
 //
 
+#import "MAPVideoTableViewCell.h"
 #import "UILabel+LabelHeight.h"
-#import "MAPMessageTableViewCell.h"
 #import "Masonry.h"
 
-@implementation MAPMessageTableViewCell
+#define Height self.frame.size.height
+#define Width self.frame.size.width
+
+@implementation MAPVideoTableViewCell
 
 + (CGFloat)cellHeightWithComment:(NSString *)comment size:(CGSize)contextSize {
     CGFloat commentHeigth = [UILabel_LabelHeight getHeightByWidth:contextSize.width - 50 title:comment font:[UIFont systemFontOfSize:15.0]];
-    return commentHeigth + 70;
+    return commentHeigth + 170;
 }
 
 - (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier {
@@ -26,18 +29,20 @@
         self.nicknameLabel = [[UILabel alloc] init];
         [self.contentView addSubview:_nicknameLabel];
         
+        self.videoCoverImageView = [[UIImageView alloc] init];
+        [self.contentView addSubview:_videoCoverImageView];
+        
+        self.videoPlayBtn = [[UIButton alloc] init];
+        [self.videoCoverImageView addSubview:_videoPlayBtn];
+        
         self.timeLabel = [[UILabel alloc] init];
         [self.contentView addSubview:_timeLabel];
-        
-        self.commentLabel = [[UILabel alloc] init];
-        [self.contentView addSubview:_commentLabel];
-        
-        self.commentBtn = [[UIButton alloc] init];
-        [self.contentView addSubview:_commentBtn];
         
         self.likeBtn = [[UIButton alloc] init];
         [self.contentView addSubview:_likeBtn];
         
+        self.commentBtn = [[UIButton alloc] init];
+        [self.contentView addSubview:_commentBtn];
     }
     return self;
 }
@@ -64,13 +69,23 @@
     self.nicknameLabel.font = [UIFont systemFontOfSize:14 weight:UIFontWeightThin];
     self.nicknameLabel.textColor = [UIColor colorWithRed:0.5f green:0.5f blue:0.5f alpha:1.00f];
     
-    [self.commentLabel mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.top.equalTo(_nicknameLabel.mas_bottom).offset(5);
-        make.left.equalTo(_nicknameLabel.mas_left);
-        make.right.equalTo(self.contentView.mas_right).offset(-30);
+    
+    [self.videoCoverImageView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.equalTo(self.contentView.mas_top).offset(40);
+        make.left.equalTo(self.contentView.mas_left).offset(Width * 0.25);
+        make.width.equalTo(self.contentView.mas_width).multipliedBy(0.5);
+        make.height.mas_equalTo(100.0);
     }];
-    _commentLabel.font = [UIFont systemFontOfSize:15.f weight:UIFontWeightThin];
-    _commentLabel.numberOfLines = 0;
+    self.videoCoverImageView.backgroundColor = [UIColor lightGrayColor];
+    self.videoCoverImageView.userInteractionEnabled = YES;
+    
+    [self.videoPlayBtn mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.center.equalTo(self.videoCoverImageView);
+        make.height.and.width.mas_equalTo(50);
+    }];
+    [self.videoPlayBtn setBackgroundImage:[UIImage imageNamed:@"播放"] forState:UIControlStateNormal];
+    [self.videoPlayBtn addTarget:self action:@selector(clickVideoPlayButton:) forControlEvents:UIControlEventTouchUpInside];
+    
     
     [self.timeLabel mas_makeConstraints:^(MASConstraintMaker *make) {
         make.left.equalTo(_nicknameLabel.mas_left);
@@ -90,7 +105,7 @@
     [self.commentBtn setTitle:[NSString stringWithFormat:@"（%ld）", _commentCount] forState:UIControlStateNormal];
     self.commentBtn.titleLabel.font = [UIFont systemFontOfSize:15];
     [self.commentBtn setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
-    [self.likeBtn addTarget:self action:@selector(clickCommentButton:) forControlEvents:UIControlEventTouchUpInside];
+    [self.commentBtn addTarget:self action:@selector(clickCommentButton:) forControlEvents:UIControlEventTouchUpInside];
     
     [self.likeBtn mas_makeConstraints:^(MASConstraintMaker *make) {
         make.right.equalTo(_commentBtn.mas_left);
@@ -106,15 +121,24 @@
     [self.likeBtn addTarget:self action:@selector(clickLikeButton:) forControlEvents:UIControlEventTouchUpInside];
 }
 
+// 点赞
 - (void)clickLikeButton:(UIButton *)sender {
     if ([_delegate respondsToSelector:@selector(clickButton: type: timeLabel:)]) {
         [_delegate clickButton:sender type:@"like" timeLabel:_timeLabel];
     }
 }
 
+// 评论
 - (void)clickCommentButton:(UIButton *)sender {
-    if ([_delegate respondsToSelector:@selector(clickCommentButton:)]) {
+    if ([_delegate respondsToSelector:@selector(clickButton: type: timeLabel:)]) {
         [_delegate clickButton:sender type:@"comment" timeLabel:_timeLabel];
+    }
+}
+
+// 播放视频
+- (void)clickVideoPlayButton:(UIButton *)sender {
+    if ([_delegate respondsToSelector:@selector(videoPlayWithButton:Row:)]) {
+        [_delegate videoPlayWithButton:sender Row:_indexRow];
     }
 }
 

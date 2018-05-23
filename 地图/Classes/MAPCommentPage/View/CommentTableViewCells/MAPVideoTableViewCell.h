@@ -1,23 +1,24 @@
 //
-//  MAPMessageTableViewCell.h
+//  MAPVideoTableViewCell.h
 //  地图
 //
-//  Created by 崔一鸣 on 2018/2/10.
+//  Created by 崔一鸣 on 2018/4/22.
 //  Copyright © 2018年 崔一鸣. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
 
-@protocol MAPMessageTableViewCellDelegate<NSObject>
+@protocol MAPVideoTableViewCellDelegate <NSObject>
 
-@optional
 - (void)clickButton:(UIButton *)sender type:(NSString *)type timeLabel:(UILabel *)timeLabel;
+
+- (void)videoPlayWithButton:(UIButton *)sender Row:(int)row;
 
 @end
 
-@interface MAPMessageTableViewCell : UITableViewCell
+@interface MAPVideoTableViewCell : UITableViewCell
 
-@property (nonatomic, weak) id<MAPMessageTableViewCellDelegate> delegate;
+@property (nonatomic, weak) id<MAPVideoTableViewCellDelegate> delegate;
 
 @property (nonatomic, strong) UIImageView *headImageView;
 
@@ -27,9 +28,13 @@
 
 @property (nonatomic, assign) long likeCount;
 
+@property (nonatomic, assign) int indexRow;
+
 @property (nonatomic, strong) UILabel *timeLabel;
 
-@property (nonatomic, strong) UILabel *commentLabel;
+@property (nonatomic, strong) UIImageView *videoCoverImageView;
+
+@property (nonatomic, strong) UIButton *videoPlayBtn;
 
 @property (nonatomic, strong) UIButton *likeBtn;
 
