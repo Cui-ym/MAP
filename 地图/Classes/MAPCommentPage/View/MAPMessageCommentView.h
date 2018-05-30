@@ -8,7 +8,15 @@
 
 #import <UIKit/UIKit.h>
 
+@protocol MAPMessageCommentViewDelegate <NSObject>
+
+- (void)clickTableViewCellWithSection:(int)section;
+
+@end
+
 @interface MAPMessageCommentView : UIView
+
+@property (nonatomic, weak) id<MAPMessageCommentViewDelegate> delegate;
 
 @property (nonatomic, copy) NSArray *commentArray;
 

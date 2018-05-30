@@ -22,11 +22,19 @@
 
 @property (nonatomic, assign) int ID;
 
+@property (nonatomic, assign) int mesCount;
+
+@property (nonatomic, assign) int phoCount;
+
+@property (nonatomic, assign) int audCount;
+
+@property (nonatomic, assign) int vidCount;
+
 @property (nonatomic, assign) double latitude;
 
 @property (nonatomic, assign) double longitude;
 
-@property (nonatomic, copy) NSString *name;
+@property (nonatomic, copy) NSString *pointName;
 
 @end
 

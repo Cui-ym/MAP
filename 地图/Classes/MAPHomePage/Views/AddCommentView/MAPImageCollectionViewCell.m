@@ -10,4 +10,13 @@
 
 @implementation MAPImageCollectionViewCell
 
+- (instancetype)initWithFrame:(CGRect)frame {
+    self = [super initWithFrame:frame];
+    if (self) {
+        self.imageView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, frame.size.width, frame.size.height)];
+        [self.contentView addSubview:_imageView];
+    }
+    return self;
+}
+
 @end

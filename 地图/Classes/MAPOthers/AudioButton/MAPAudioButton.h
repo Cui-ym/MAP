@@ -10,4 +10,8 @@
 
 @interface MAPAudioButton : UIButton
 
+@property (nonatomic, strong) UIImageView *audioImageView;
+
+@property (nonatomic, strong) UILabel *timeLabel;
+
 @end

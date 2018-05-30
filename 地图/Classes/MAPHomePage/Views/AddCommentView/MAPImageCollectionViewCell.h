@@ -10,4 +10,10 @@
 
 @interface MAPImageCollectionViewCell : UICollectionViewCell
 
+@property (nonatomic, strong) UIImageView *imageView;
+
+@property (nonatomic, copy) NSString *timeString;
+
 @end
+
+

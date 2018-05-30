@@ -28,9 +28,12 @@
     } else if (imageArray.count >= 7 && imageArray.count <= 9) {
         imageHeight = contextSize.width * 0.6 + 10;
     }
-    // 10 nickLibel 距离顶部距离
-    // 30 nickLibel 高度
-    imageHeight = imageHeight + 10 + 30 + 15 + 30;
+    // 10 headImageView 距顶部高度
+    // HH headImageView 高度
+    // 5
+    // 30 likeButton    等高度
+    CGFloat HH = contextSize.width * 0.14;
+    imageHeight = imageHeight + 10 + HH + 5 + 30;
     return imageHeight;
 }
 
@@ -44,6 +47,9 @@
         
         self.nicknameLabel = [[UILabel alloc] init];
         [self.contentView addSubview:_nicknameLabel];
+        
+        self.titleLabel = [[UILabel alloc] init];
+        [self.contentView addSubview:_titleLabel];
         
         self.timeLabel = [[UILabel alloc] init];
         [self.contentView addSubview:_timeLabel];
@@ -74,18 +80,28 @@
     
     [self.nicknameLabel mas_makeConstraints:^(MASConstraintMaker *make) {
         make.left.equalTo(_headImageView.mas_right).offset(15);
-        make.top.equalTo(_headImageView.mas_top);
+//        make.top.equalTo(_headImageView.mas_top);
+        make.bottom.equalTo(_headImageView.mas_centerY).offset(-5);
         make.right.equalTo(self.contentView.mas_right).offset(-20);
     }];
     self.nicknameLabel.font = [UIFont systemFontOfSize:14 weight:UIFontWeightThin];
     self.nicknameLabel.textColor = [UIColor colorWithRed:0.5f green:0.5f blue:0.5f alpha:1.00f];
+    
+    [self.titleLabel mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.left.equalTo(_headImageView.mas_right).offset(15);
+        make.top.equalTo(_headImageView.mas_centerY).offset(5);
+        make.right.equalTo(self.contentView.mas_right).offset(-20);
+    }];
+    self.titleLabel.font = [UIFont systemFontOfSize:16 weight:UIFontWeightThin];
+    self.titleLabel.textColor = [UIColor blackColor];
+    
     if (_flag == 0) {
         _flag = 1;
         if (_imageCount == 1) {
             self.photoCommentImageView = [[UIImageView alloc] init];
             [self.contentView addSubview:_photoCommentImageView];
             [self.photoCommentImageView mas_makeConstraints:^(MASConstraintMaker *make) {
-                make.top.equalTo(self.contentView.mas_top).offset(40);
+                make.top.equalTo(self.headImageView.mas_bottom).offset(5);
                 make.left.equalTo(self.contentView.mas_left).offset(Width * 0.25);
                 make.width.equalTo(self.contentView.mas_width).multipliedBy(0.4);
                 make.height.mas_equalTo(100.0);
@@ -97,7 +113,7 @@
             self.collectionLayout = [[UICollectionViewFlowLayout alloc] init];
             _collectionLayout.minimumLineSpacing = 10;
             _collectionLayout.minimumInteritemSpacing = 5;
-            self.imageCollectionView = [[UICollectionView alloc] initWithFrame:CGRectMake(Width * 0.25, 40, Width * 0.4 + 5, (Width * 0.2 + 5) * _imageArray.count / 2) collectionViewLayout:_collectionLayout];
+            self.imageCollectionView = [[UICollectionView alloc] initWithFrame:CGRectMake(Width * 0.25, 10 + Width * 0.14, Width * 0.4 + 5, (Width * 0.2 + 5) * _imageArray.count / 2) collectionViewLayout:_collectionLayout];
             self.imageCollectionView.backgroundColor = [UIColor clearColor];
             self.imageCollectionView.scrollEnabled = NO;
             [self.contentView addSubview:self.imageCollectionView];
@@ -116,7 +132,7 @@
                 num = _imageCount / 3;
             }
             NSLog(@"--%d--", _imageCount);
-            self.imageCollectionView = [[UICollectionView alloc] initWithFrame:CGRectMake(Width * 0.25, 40, Width * 0.6 + 10, (Width * 0.2 + 5) * num) collectionViewLayout:_collectionLayout];
+            self.imageCollectionView = [[UICollectionView alloc] initWithFrame:CGRectMake(Width * 0.25, 10 + Width * 0.14, Width * 0.6 + 10, (Width * 0.2 + 5) * num) collectionViewLayout:_collectionLayout];
             self.imageCollectionView.backgroundColor = [UIColor clearColor];
             self.imageCollectionView.scrollEnabled = NO;
             [self.contentView addSubview:self.imageCollectionView];

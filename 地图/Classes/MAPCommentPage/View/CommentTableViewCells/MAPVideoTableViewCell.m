@@ -16,8 +16,10 @@
 @implementation MAPVideoTableViewCell
 
 + (CGFloat)cellHeightWithComment:(NSString *)comment size:(CGSize)contextSize {
-    CGFloat commentHeigth = [UILabel_LabelHeight getHeightByWidth:contextSize.width - 50 title:comment font:[UIFont systemFontOfSize:15.0]];
-    return commentHeigth + 170;
+    NSLog(@"计算高度");
+    CGFloat height = contextSize.width * 0.14 + 10 + 5 + 100 + 30 + 5;
+//    CGFloat commentHeigth = [UILabel_LabelHeight getHeightByWidth:contextSize.width - 50 title:comment font:[UIFont systemFontOfSize:15.0]];
+    return height;
 }
 
 - (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier {
@@ -28,6 +30,9 @@
         
         self.nicknameLabel = [[UILabel alloc] init];
         [self.contentView addSubview:_nicknameLabel];
+        
+        self.titleLabel = [[UILabel alloc] init];
+        [self.contentView addSubview:_titleLabel];
         
         self.videoCoverImageView = [[UIImageView alloc] init];
         [self.contentView addSubview:_videoCoverImageView];
@@ -63,17 +68,25 @@
     
     [self.nicknameLabel mas_makeConstraints:^(MASConstraintMaker *make) {
         make.left.equalTo(_headImageView.mas_right).offset(15);
-        make.top.equalTo(_headImageView.mas_top);
+        make.bottom.equalTo(_headImageView.mas_centerY).offset(-5);
         make.right.equalTo(self.contentView.mas_right).offset(-20);
     }];
     self.nicknameLabel.font = [UIFont systemFontOfSize:14 weight:UIFontWeightThin];
     self.nicknameLabel.textColor = [UIColor colorWithRed:0.5f green:0.5f blue:0.5f alpha:1.00f];
     
+    [self.titleLabel mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.left.equalTo(_headImageView.mas_right).offset(15);
+        make.top.equalTo(_headImageView.mas_centerY).offset(5);
+        make.right.equalTo(self.contentView.mas_right).offset(-20);
+    }];
+    self.titleLabel.font = [UIFont systemFontOfSize:16 weight:UIFontWeightThin];
+    self.titleLabel.textColor = [UIColor blackColor];
+    
     
     [self.videoCoverImageView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.top.equalTo(self.contentView.mas_top).offset(40);
+        make.top.equalTo(self.headImageView.mas_bottom).offset(5);
         make.left.equalTo(self.contentView.mas_left).offset(Width * 0.25);
-        make.width.equalTo(self.contentView.mas_width).multipliedBy(0.5);
+        make.width.equalTo(self.contentView.mas_width).multipliedBy(0.4);
         make.height.mas_equalTo(100.0);
     }];
     self.videoCoverImageView.backgroundColor = [UIColor lightGrayColor];

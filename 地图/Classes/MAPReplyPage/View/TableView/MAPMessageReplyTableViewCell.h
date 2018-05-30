@@ -10,4 +10,12 @@
 
 @interface MAPMessageReplyTableViewCell : UITableViewCell
 
+@property (nonatomic, strong) UIImageView *headImageView;
+
+@property (nonatomic, strong) UILabel *nicknameLabel;
+
+@property (nonatomic, strong) UILabel *timeLabel;
+
+@property (nonatomic, strong) UILabel *commentLabel;
+
 @end

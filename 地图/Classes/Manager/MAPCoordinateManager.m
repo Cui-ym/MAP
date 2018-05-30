@@ -34,12 +34,13 @@ static MAPCoordinateManager *manager = nil;
         NSError *error;
         NSLog(@"resp:%@",responseObject);
         MAPCoordinateModel *model = [[MAPCoordinateModel alloc] initWithDictionary:responseObject error:&error];
+        NSLog(@"%@", model);
         if (error) {
             errorBlock(error);
-        }else{
+        } else {
             if (model.status == 0) {
                 succeedBlock(model);
-            }else{
+            } else {
                 NSError *error = [[NSError alloc] initWithDomain:model.message code:(NSInteger)model.status userInfo:nil];
                 errorBlock(error);
             }

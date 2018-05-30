@@ -16,13 +16,16 @@
 #import "MAPMessageFooterView.h"
 #import "MAPMessageHeaderView.h"
 
+// 回复界面
+#import "MAPReplyViewController.h"
+
 #import <AVFoundation/AVFoundation.h>
 #import <CoreMedia/CoreMedia.h>
 
 #define kHEIGHT self.view.frame.size.height
 #define kWIDTH self.view.frame.size.width
 
-@interface MAPCommentViewController () <MAPCommentViewDelegate, MAPVideoBottmViewDelegate, MAPMessageFooterViewDelegate>
+@interface MAPCommentViewController () <MAPCommentViewDelegate, MAPVideoBottmViewDelegate, MAPMessageFooterViewDelegate, MAPMessageCommentViewDelegate>
 
 typedef NS_ENUM(NSInteger, PlayerStatus) {
     None,
@@ -34,6 +37,9 @@ typedef NS_ENUM(NSInteger, PlayerStatus) {
 // 评论界面
 @property (nonatomic, strong) MAPCommentView *commentView;
 @property (nonatomic, strong) MAPMessageCommentView *messageCommentView;
+
+// 评论回复
+@property (nonatomic, strong) MAPReplyViewController *replyViewController;
 
 // 视频播放
 @property (nonatomic, strong) AVPlayer *videoPlayer;
@@ -67,12 +73,15 @@ typedef NS_ENUM(NSInteger, PlayerStatus) {
     self.navigationTitleArray = [NSArray arrayWithObjects:@"文字评论", @"图片评论", @"语音评论", @"视频评论", nil];
     self.navigationItem.title = _navigationTitleArray[_type];
     self.navigationController.navigationBar.backgroundColor = [UIColor whiteColor];
+    NSLog(@"type : %d", _type);
     if (_type == 0) {
         self.messageCommentView = [[MAPMessageCommentView alloc] initWithFrame:[UIScreen mainScreen].bounds];
+        self.messageCommentView.delegate = self;
         self.messageCommentView.commentArray = [NSArray arrayWithArray:_commentArray];
         [self.messageCommentView calculateHeight];
         [self.view addSubview:_messageCommentView];
     } else {
+        NSLog(@"点击了非文字评论");
         self.commentView = [[MAPCommentView alloc] initWithFrame:[UIScreen mainScreen].bounds];
         self.commentView.type = _type;
         self.commentView.delegate = self;
@@ -103,7 +112,7 @@ typedef NS_ENUM(NSInteger, PlayerStatus) {
     NSLog(@"%@", url);
     AVAssetImageGenerator *generator = [[AVAssetImageGenerator alloc] initWithAsset:asset];
     generator.appliesPreferredTrackTransform = YES;
-    CMTime time = CMTimeMake(1, 10);
+    CMTime time = CMTimeMake(1, 100);
     NSError *error = nil;
     CMTime actualTime;
     CGImageRef image = [generator copyCGImageAtTime:time actualTime:&actualTime error:&error];
@@ -301,7 +310,12 @@ typedef NS_ENUM(NSInteger, PlayerStatus) {
         _playerStatu = Play;
     }
 }
-
+- (void)clickTableViewCellWithSection:(int)section {
+    self.replyViewController = [[MAPReplyViewController alloc] init];
+    NSLog(@"%@", _commentArray);
+    self.replyViewController.replyCount = 10;
+    [self.navigationController pushViewController:_replyViewController animated:YES];
+}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

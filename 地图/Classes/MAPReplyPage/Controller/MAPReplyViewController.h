@@ -10,4 +10,8 @@
 
 @interface MAPReplyViewController : UIViewController
 
+@property (nonatomic, assign) long replyCount;
+
+@property (nonatomic, copy) NSString *userName;
+
 @end

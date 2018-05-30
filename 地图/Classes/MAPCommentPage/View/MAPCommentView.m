@@ -24,6 +24,7 @@
 @implementation MAPCommentView
 
 {
+    NSString *title;
     UIImageView *imageView;
     NSMutableArray *cellHeightArray;
     NSMutableArray *imageMutableArray;
@@ -93,7 +94,8 @@
         coverImageDictionary = [NSMutableDictionary dictionary];
         [_commentTableView registerClass:[MAPVideoTableViewCell class] forCellReuseIdentifier:videoCell];
         for (id obj in _commentArray) {
-            CGFloat height = [MAPVideoTableViewCell cellHeightWithComment:[obj content] size:CGSizeMake(self.frame.size.width * 0.9, 0)];
+            NSDictionary *dictionary = [NSDictionary dictionaryWithDictionary:(NSDictionary *)[obj content]];
+            CGFloat height = [MAPVideoTableViewCell cellHeightWithComment:dictionary[@"title"] size:CGSizeMake(self.frame.size.width, 0)];
             [cellHeightArray addObject:[NSNumber numberWithFloat:height]];
         }
     } else if (_type == 2) {            // 语音评论
@@ -138,6 +140,7 @@
         [self initImageMutableArrayWithCommentNumber:(int)indexPath.row];
         
         imageCommentCell.delegate = self;
+        imageCommentCell.titleLabel.text = title;
         imageCommentCell.imageCount = [imageNumberArray[indexPath.row] intValue];
         imageCommentCell.imageArray = [NSArray arrayWithArray:imageMutableArray];
         imageCommentCell.nicknameLabel.text = [_commentArray[indexPath.row] username];
@@ -153,7 +156,7 @@
             } else {
                 num = [imageNumberArray[indexPath.row] intValue] / 3;
             }
-            imageCommentCell.imageCollectionView.frame = CGRectMake(Width * 0.24, 40, Width * 0.6 + 10, (Width * 0.2 + 5) * num);
+            imageCommentCell.imageCollectionView.frame = CGRectMake(Width * 0.25, 10 + Width * 0.14, Width * 0.6 + 10, (Width * 0.2 + 5) * num);
         }
         if (imageMutableArray.count == 1) {        // 如果只有一张照片更新高度
             NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"http://47.95.207.40/markMapFile%@", imageMutableArray[0]]];
@@ -169,7 +172,10 @@
         MAPVideoTableViewCell *videoTableCell = nil;
         videoTableCell = [tableView dequeueReusableCellWithIdentifier:videoCell forIndexPath:indexPath];
         videoTableCell.delegate = self;
+        NSDictionary *dictionary = [NSDictionary dictionaryWithDictionary:(NSDictionary *)[_commentArray[indexPath.row] content]];
+        title = dictionary[@"title"];
         videoTableCell.indexRow = (int)indexPath.row;
+        videoTableCell.titleLabel.text = title;
         videoTableCell.likeCount = [_commentArray[indexPath.row] clickCount];
         videoTableCell.timeLabel.text = [_commentArray[indexPath.row] createAt];
         videoTableCell.commentCount = [_commentArray[indexPath.row] remarkCount];
@@ -198,12 +204,15 @@
 
 // 更新视频图片
 - (UIImage *)reloadVideoCoverImageView:(NSIndexPath *)indexPath {
-    NSString *string = [NSString stringWithFormat:@"http://47.95.207.40/markMapFile%@", [_commentArray[indexPath.row] content]];
-    NSURL *url = [NSURL URLWithString:string];
+    NSDictionary *dictionary = [NSDictionary dictionaryWithDictionary:(NSDictionary *)[_commentArray[indexPath.row] content]];
+    NSString *string = dictionary[@"url"];
+    NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"http://47.95.207.40/markMapFile%@", string]];
     UIImage *coverImage;
     if ([_delegate respondsToSelector:@selector(getVideoCoverImagesWithURL:)]) {
         coverImage = [self.delegate getVideoCoverImagesWithURL:url];
-        [coverImageDictionary setObject:coverImage forKey:[NSNumber numberWithInteger:indexPath.row]];
+        if (coverImage != nil) {
+            [coverImageDictionary setObject:coverImage forKey:[NSNumber numberWithInteger:indexPath.row]];
+        }
         return coverImage;
     }
     return nil;
@@ -211,26 +220,17 @@
 
 // 获得图片数组
 - (void)initImageMutableArrayWithCommentNumber:(int)number {
-    NSString *imageString = [_commentArray[number] content];
-    NSInteger location = 1;
-    imageMutableArray = [NSMutableArray array];
-    while (1) {
-        location = [imageString rangeOfString:@"&"].location;
-        if (location < 1000) {
-            NSString *tempString = [imageString substringToIndex:location];
-            [imageMutableArray addObject:tempString];
-            imageString = [imageString substringFromIndex:location + 1];
-        } else {
-            [imageMutableArray addObject:imageString];
-            break;
-        }
-    }
+    NSDictionary *dictionary = [NSDictionary dictionaryWithDictionary:(NSDictionary *)[_commentArray[number] content]];
+    imageMutableArray = [NSMutableArray arrayWithArray:dictionary[@"urls"]];
+    title = dictionary[@"title"];
+    NSLog(@"number:%d----%@", number, imageMutableArray);
 }
 
 // 播放视频
 - (void)videoPlayWithButton:(UIButton *)sender Row:(int)row {
-    NSLog(@"%@", [_commentArray[row] content]);
-    NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"http://47.95.207.40/markMapFile%@", [_commentArray[row] content]]] ;
+    NSDictionary *dictionary = [NSDictionary dictionaryWithDictionary:(NSDictionary *)[_commentArray[row] content]];
+    NSString *string = dictionary[@"url"];
+    NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"http://47.95.207.40/markMapFile%@", string]];
     if ([_delegate respondsToSelector:@selector(videoPlayWithUrl:)]) {
         [_delegate videoPlayWithUrl:url];
     }
@@ -238,8 +238,9 @@
 
 // 播放语音
 - (void)audioPlayWithButton:(UIButton *)sender Row:(NSInteger)row {
-    NSLog(@"%@", [_commentArray[row] content]);
-    NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"http://47.95.207.40/markMapFile%@", [_commentArray[row] content]]];
+    NSDictionary *dictionary = [NSDictionary dictionaryWithDictionary:(NSDictionary *)[_commentArray[row] content]];
+    NSString *string = dictionary[@"url"];
+    NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"http://47.95.207.40/markMapFile%@", string]];
     if ([_delegate respondsToSelector:@selector(audioPlayWithUrl:)]) {
         [_delegate audioPlayWithUrl:url];
     }

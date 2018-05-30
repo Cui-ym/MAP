@@ -10,4 +10,10 @@
 
 @interface MAPReplyButton : UIButton
 
+@property (nonatomic, strong) UIImageView *headImageView;
+
+@property (nonatomic, strong) UILabel *replyLabel;
+
+@property (nonatomic, strong) UIView *topLine;
+
 @end

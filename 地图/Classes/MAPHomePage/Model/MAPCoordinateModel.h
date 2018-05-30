@@ -13,17 +13,23 @@
 
 @interface MAPDataItemModel : JSONModel
 
-@property (nonatomic, assign) NSInteger id;
+@property (nonatomic, assign) int ID;
 
 @property (nonatomic, copy) NSString *username;
 
-@property (nonatomic, copy) NSString *content;
+@property (nonatomic, strong) NSObject *content;
+
+//@property (nonatomic, copy) NSArray *content;
 
 @property (nonatomic, copy) NSString *createAt;
 
 @property (nonatomic, assign) NSInteger pointId;
 
 @property (nonatomic, assign) NSInteger type;
+
+@property (nonatomic, assign) NSInteger clickCount;
+
+@property (nonatomic, assign) NSInteger remarkCount;
 
 @end
 

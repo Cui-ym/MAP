@@ -10,4 +10,8 @@
 
 @interface MAPGetCommentButton : UIButton
 
+@property (nonatomic, strong) UIImageView *typeImage;
+
+@property (nonatomic, strong) UILabel *countLabel;
+
 @end

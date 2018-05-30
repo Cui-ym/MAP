@@ -1,12 +1,15 @@
 PODS:
   - BaiduMapKit (3.4.0)
+  - TZImagePickerController (1.9.3)
 
 DEPENDENCIES:
   - BaiduMapKit
+  - TZImagePickerController
 
 SPEC CHECKSUMS:
   BaiduMapKit: 0a5e5e0b1e3fd8dc5aceb40ab9b89e52e1d13df9
+  TZImagePickerController: 079ab986018c22793462e531045a75e366b18252
 
-PODFILE CHECKSUM: 1909d141d67b63c374870d20dd309cadda917a2d
+PODFILE CHECKSUM: 8305fda2b05477f3af05e9a82701382933196b0d
 
 COCOAPODS: 1.4.0

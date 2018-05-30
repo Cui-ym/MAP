@@ -13,5 +13,723 @@
             stopOnStyle = "0">
          </BreakpointContent>
       </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "&#x5730;&#x56fe;/Classes/MAPHomePage/Manager/MAPAddPointManager.m"
+            timestampString = "547607818.357492"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "99"
+            endingLineNumber = "99"
+            landmarkName = "-uploadPhotosWithPointId:Data:success:error:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "&#x5730;&#x56fe;/Classes/MAPHomePage/Manager/MAPAddPointManager.m"
+            timestampString = "547607818.357615"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "127"
+            endingLineNumber = "127"
+            landmarkName = "-uploadPhotosWithPointId:Data:success:error:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "&#x5730;&#x56fe;/Classes/MAPHomePage/Manager/MAPAddPointManager.m"
+            timestampString = "547607818.357705"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "126"
+            endingLineNumber = "126"
+            landmarkName = "-uploadPhotosWithPointId:Data:success:error:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "&#x5730;&#x56fe;/Classes/MAPHomePage/Manager/MAPAddPointManager.m"
+            timestampString = "547607818.357788"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "101"
+            endingLineNumber = "101"
+            landmarkName = "-uploadPhotosWithPointId:Data:success:error:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "&#x5730;&#x56fe;/Classes/MAPHomePage/Manager/MAPAddPointManager.m"
+            timestampString = "547607818.357866"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "133"
+            endingLineNumber = "133"
+            landmarkName = "-uploadWithPointId:Data:Type:success:error:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "&#x5730;&#x56fe;/Classes/MAPHomePage/Controllers/AddCommentController/MAPAddCommentViewController.m"
+            timestampString = "549383790.717659"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "202"
+            endingLineNumber = "202"
+            landmarkName = "-postAudioComment"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "&#x5730;&#x56fe;/Classes/MAPHomePage/Views/CommentView/MAPCommentTableViewCells/MAPImageTableViewCell.m"
+            timestampString = "547607818.358043"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "174"
+            endingLineNumber = "174"
+            landmarkName = "-collectionView:cellForItemAtIndexPath:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "&#x5730;&#x56fe;/Classes/MAPHomePage/Manager/MAPAddPointManager.m"
+            timestampString = "547607818.358122"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "114"
+            endingLineNumber = "114"
+            landmarkName = "-uploadPhotosWithPointId:Data:success:error:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "&#x5730;&#x56fe;/Classes/MAPHomePage/Views/CommentView/MAPCommentView.m"
+            timestampString = "547607818.3582031"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "111"
+            endingLineNumber = "111"
+            landmarkName = "-calculateHeight"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "&#x5730;&#x56fe;/Classes/MAPHomePage/Controllers/AddCommentController/MAPAddCommentViewController.m"
+            timestampString = "549383790.718179"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "100"
+            endingLineNumber = "100"
+            landmarkName = "-selectFromoAlbum"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "&#x5730;&#x56fe;/Classes/MAPHomePage/Controllers/AddCommentController/MAPAddCommentViewController.m"
+            timestampString = "549383790.71842"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "101"
+            endingLineNumber = "101"
+            landmarkName = "-selectFromoAlbum"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "&#x5730;&#x56fe;/Classes/MAPHomePage/Controllers/HomeController/MAPHomeViewController.m"
+            timestampString = "549297405.786783"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "239"
+            endingLineNumber = "239"
+            landmarkName = "-imagePickerController:didFinishPickingMediaWithInfo:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "&#x5730;&#x56fe;/Classes/MAPHomePage/Controllers/AddCommentController/MAPAddCommentViewController.m"
+            timestampString = "549383790.718701"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "140"
+            endingLineNumber = "140"
+            landmarkName = "-playVideoWithUrl:"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[MAPAddCommentViewController playVideoWithUrl:]"
+                  moduleName = "&#x5730;&#x56fe;"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/cuiyiming/Desktop/%E9%A1%B9%E7%9B%AE/%E5%9C%B0%E5%9B%BE/%E5%9C%B0%E5%9B%BE/Classes/MAPHomePage/Controllers/AddCommentController/MAPAddCommentViewController.m"
+                  timestampString = "549383792.397839"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "140"
+                  endingLineNumber = "140"
+                  offsetFromSymbolStart = "584">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__48-[MAPAddCommentViewController playVideoWithUrl:]_block_invoke"
+                  moduleName = "&#x5730;&#x56fe;"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/cuiyiming/Desktop/%E9%A1%B9%E7%9B%AE/%E5%9C%B0%E5%9B%BE/%E5%9C%B0%E5%9B%BE/Classes/MAPHomePage/Controllers/AddCommentController/MAPAddCommentViewController.m"
+                  timestampString = "549383792.402019"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "140"
+                  endingLineNumber = "140"
+                  offsetFromSymbolStart = "24">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "&#x5730;&#x56fe;/Classes/MAPHomePage/Controllers/AddCommentController/MAPAddCommentViewController.m"
+            timestampString = "549383790.718956"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "145"
+            endingLineNumber = "145"
+            landmarkName = "-playVideoWithUrl:"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__48-[MAPAddCommentViewController playVideoWithUrl:]_block_invoke"
+                  moduleName = "&#x5730;&#x56fe;"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/cuiyiming/Desktop/%E9%A1%B9%E7%9B%AE/%E5%9C%B0%E5%9B%BE/%E5%9C%B0%E5%9B%BE/Classes/MAPHomePage/Controllers/AddCommentController/MAPAddCommentViewController.m"
+                  timestampString = "545988554.819851"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "150"
+                  endingLineNumber = "150"
+                  offsetFromSymbolStart = "252">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__copy_helper_block_.180"
+                  moduleName = "&#x5730;&#x56fe;"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/cuiyiming/Desktop/%E9%A1%B9%E7%9B%AE/%E5%9C%B0%E5%9B%BE/%E5%9C%B0%E5%9B%BE/Classes/MAPHomePage/Controllers/AddCommentController/MAPAddCommentViewController.m"
+                  timestampString = "545988554.823343"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "150"
+                  endingLineNumber = "150"
+                  offsetFromSymbolStart = "64">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__destroy_helper_block_.181"
+                  moduleName = "&#x5730;&#x56fe;"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/cuiyiming/Desktop/%E9%A1%B9%E7%9B%AE/%E5%9C%B0%E5%9B%BE/%E5%9C%B0%E5%9B%BE/Classes/MAPHomePage/Controllers/AddCommentController/MAPAddCommentViewController.m"
+                  timestampString = "545988554.826247"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "150"
+                  endingLineNumber = "150"
+                  offsetFromSymbolStart = "36">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "&#x5730;&#x56fe;/Classes/MAPHomePage/Controllers/AddCommentController/MAPAddCommentViewController.m"
+            timestampString = "549383790.719178"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "142"
+            endingLineNumber = "142"
+            landmarkName = "-playVideoWithUrl:"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__48-[MAPAddCommentViewController playVideoWithUrl:]_block_invoke"
+                  moduleName = "&#x5730;&#x56fe;"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/cuiyiming/Desktop/%E9%A1%B9%E7%9B%AE/%E5%9C%B0%E5%9B%BE/%E5%9C%B0%E5%9B%BE/Classes/MAPHomePage/Controllers/AddCommentController/MAPAddCommentViewController.m"
+                  timestampString = "549383792.447246"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "142"
+                  endingLineNumber = "142"
+                  offsetFromSymbolStart = "128">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__48-[MAPAddCommentViewController playVideoWithUrl:]_block_invoke_2"
+                  moduleName = "&#x5730;&#x56fe;"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/cuiyiming/Desktop/%E9%A1%B9%E7%9B%AE/%E5%9C%B0%E5%9B%BE/%E5%9C%B0%E5%9B%BE/Classes/MAPHomePage/Controllers/AddCommentController/MAPAddCommentViewController.m"
+                  timestampString = "549383792.451208"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "142"
+                  endingLineNumber = "142"
+                  offsetFromSymbolStart = "24">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "&#x5730;&#x56fe;/Classes/MAPHomePage/Controllers/HomeController/MAPHomeViewController.m"
+            timestampString = "549297405.7885669"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "211"
+            endingLineNumber = "211"
+            landmarkName = "-takePhotoOrVideoWithType:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "&#x5730;&#x56fe;/Classes/MAPHomePage/Controllers/CommentController/MAPCommentViewController.m"
+            timestampString = "547561946.867005"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "266"
+            endingLineNumber = "266"
+            landmarkName = "-videoPlay"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "&#x5730;&#x56fe;/Classes/MAPHomePage/Controllers/CommentController/MAPCommentViewController.m"
+            timestampString = "547561946.867406"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "94"
+            endingLineNumber = "94"
+            landmarkName = "-getVideoCoverImagesWithURL:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "&#x5730;&#x56fe;/Classes/MAPHomePage/Controllers/CommentController/MAPCommentViewController.m"
+            timestampString = "547561946.867654"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "110"
+            endingLineNumber = "110"
+            landmarkName = "-videoPlayWithUrl:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "&#x5730;&#x56fe;/Classes/MAPHomePage/Controllers/HomeController/MAPHomeViewController.m"
+            timestampString = "549297405.788766"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "230"
+            endingLineNumber = "230"
+            landmarkName = "-imagePickerController:didFinishPickingMediaWithInfo:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "&#x5730;&#x56fe;/Classes/MAPHomePage/Controllers/AddCommentController/MAPAddCommentViewController.m"
+            timestampString = "549383790.719713"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "122"
+            endingLineNumber = "122"
+            landmarkName = "-imagePickerController:didFinishPickingVideo:sourceAssets:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "&#x5730;&#x56fe;/Classes/MAPHomePage/Controllers/AddCommentController/MAPAddCommentViewController.m"
+            timestampString = "549383790.719934"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "218"
+            endingLineNumber = "218"
+            landmarkName = "-postVideoCommentWithTitle:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "&#x5730;&#x56fe;/Classes/MAPHomePage/Controllers/AddCommentController/MAPAddCommentViewController.m"
+            timestampString = "549383790.7201459"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "285"
+            endingLineNumber = "285"
+            landmarkName = "-audio_lpcmToMp3"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "&#x5730;&#x56fe;/Classes/MAPHomePage/Controllers/AddCommentController/MAPAddCommentViewController.m"
+            timestampString = "549383790.720337"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "287"
+            endingLineNumber = "287"
+            landmarkName = "-audio_lpcmToMp3"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[MAPAddCommentViewController audio_lpcmToMp3]"
+                  moduleName = "&#x5730;&#x56fe;"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/cuiyiming/Desktop/%E9%A1%B9%E7%9B%AE/%E5%9C%B0%E5%9B%BE/%E5%9C%B0%E5%9B%BE/Classes/MAPHomePage/Controllers/AddCommentController/MAPAddCommentViewController.m"
+                  timestampString = "547484252.150882"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "281"
+                  endingLineNumber = "281"
+                  offsetFromSymbolStart = "624">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[MAPAddCommentViewController audio_lpcmToMp3]"
+                  moduleName = "&#x5730;&#x56fe;"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/cuiyiming/Desktop/%E9%A1%B9%E7%9B%AE/%E5%9C%B0%E5%9B%BE/%E5%9C%B0%E5%9B%BE/Classes/MAPHomePage/Controllers/AddCommentController/MAPAddCommentViewController.m"
+                  timestampString = "547484252.153609"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "281"
+                  endingLineNumber = "281"
+                  offsetFromSymbolStart = "1032">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[MAPAddCommentViewController audio_lpcmToMp3]"
+                  moduleName = "&#x5730;&#x56fe;"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/cuiyiming/Desktop/%E9%A1%B9%E7%9B%AE/%E5%9C%B0%E5%9B%BE/%E5%9C%B0%E5%9B%BE/Classes/MAPHomePage/Controllers/AddCommentController/MAPAddCommentViewController.m"
+                  timestampString = "547484252.1568331"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "281"
+                  endingLineNumber = "281"
+                  offsetFromSymbolStart = "1264">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "&#x5730;&#x56fe;/Classes/MAPHomePage/Controllers/AddCommentController/MAPAddCommentViewController.m"
+            timestampString = "549383790.7205271"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "286"
+            endingLineNumber = "286"
+            landmarkName = "-audio_lpcmToMp3"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "&#x5730;&#x56fe;/Classes/MAPHomePage/Controllers/AddCommentController/MAPAddCommentViewController.m"
+            timestampString = "549383790.720716"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "281"
+            endingLineNumber = "281"
+            landmarkName = "-audio_lpcmToMp3"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "&#x5730;&#x56fe;/Classes/MAPHomePage/Views/CommentView/MAPCommentView.m"
+            timestampString = "547607818.3602279"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "260"
+            endingLineNumber = "260"
+            landmarkName = "-audioPlayWithButton:Row:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "&#x5730;&#x56fe;/Classes/MAPReplyPage/View/MAPReplyView.m"
+            timestampString = "549297405.791198"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "125"
+            endingLineNumber = "125"
+            landmarkName = "-calculateHeight"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "&#x5730;&#x56fe;/Classes/MAPReplyPage/View/MAPReplyView.m"
+            timestampString = "549297405.791262"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "135"
+            endingLineNumber = "135"
+            landmarkName = "MAPReplyView"
+            landmarkType = "3">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "&#x5730;&#x56fe;/Classes/MAPReplyPage/View/MAPReplyView.m"
+            timestampString = "549297405.791315"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "131"
+            endingLineNumber = "131"
+            landmarkName = "-tableView:viewForHeaderInSection:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "&#x5730;&#x56fe;/Classes/MAPReplyPage/View/MAPReplyView.m"
+            timestampString = "549297405.791366"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "140"
+            endingLineNumber = "140"
+            landmarkName = "-tableView:heightForHeaderInSection:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "&#x5730;&#x56fe;/Classes/MAPReplyPage/View/MAPReplyView.m"
+            timestampString = "549297405.791415"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "144"
+            endingLineNumber = "144"
+            landmarkName = "-tableView:heightForRowAtIndexPath:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "&#x5730;&#x56fe;/Classes/MAPHomePage/Controllers/HomeController/MAPHomeViewController.m"
+            timestampString = "549297405.791469"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "302"
+            endingLineNumber = "302"
+            landmarkName = "-addCommentViewWithStyle:pointID:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "&#x5730;&#x56fe;/Classes/Manager/MAPAddPointManager.m"
+            timestampString = "549383790.721272"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "140"
+            endingLineNumber = "140"
+            landmarkName = "-uploadWithPointId:Data:Type:Title:success:error:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "&#x5730;&#x56fe;/Classes/Manager/MAPAddPointManager.m"
+            timestampString = "549383790.721463"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "171"
+            endingLineNumber = "171"
+            landmarkName = "-uploadWithPointId:Data:Type:Title:success:error:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
    </Breakpoints>
 </Bucket>

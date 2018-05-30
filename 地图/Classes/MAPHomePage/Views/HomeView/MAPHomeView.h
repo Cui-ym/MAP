@@ -13,11 +13,23 @@
 
 @required
 // 添加点
-- (void)popAlertController;
+- (void)popAlertController:(UIAlertController *)alert;
 - (void)addPoint:(NSString *)name;
 
 // 添加评论
 - (void)pushCommentController:(NSString *)type;
+
+// 录制语音
+- (void)recordStart;
+// 完成录音
+- (void)recordFinish:(int)time;
+
+// 从相册中选择
+- (void)chooseFromeAlbum:(int)type;
+
+// 摄像头拍摄
+- (void)takePhotoOrVideoWithType:(int)type;
+
 
 @end
 
@@ -31,7 +43,7 @@
 
 @property (nonatomic, strong) UIButton *addContentButton;
 
-@property (nonatomic, strong) UIView *messageBackgroundView;
+@property (nonatomic, strong) UIView *viewBackgroundView;
 
 @property (nonatomic, strong) UIView *messageView;
 
@@ -45,6 +57,28 @@
 
 @property (nonatomic, strong) UIAlertController *alert;
 
+@property (nonatomic, strong) UIAlertController *noneAlert;
+
+// 录制语音view
+@property (nonatomic, assign) BOOL isRecord;
+
+@property (nonatomic, strong) UIView *recordView;
+
+@property (nonatomic, strong) UILabel *recordLabel;
+
+@property (nonatomic, strong) UILabel *timeLabel;
+
+@property (nonatomic, strong) UIButton *recordButton;
+
+@property (nonatomic, strong) NSTimer *timer;
+
+@property (nonatomic, assign) int count;
+
+
 - (void)initAddContentButton;
+
+- (void)alertWithoutInformation;
+
+- (void)initRecordVoiceView;
 
 @end

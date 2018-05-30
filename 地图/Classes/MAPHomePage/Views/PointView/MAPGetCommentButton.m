@@ -10,12 +10,24 @@
 
 @implementation MAPGetCommentButton
 
-/*
-// Only override drawRect: if you perform custom drawing.
-// An empty implementation adversely affects performance during animation.
-- (void)drawRect:(CGRect)rect {
-    // Drawing code
+- (instancetype)initWithFrame:(CGRect)frame
+{
+    self = [super initWithFrame:frame];
+    if (self) {
+        self.countLabel = [[UILabel alloc] init];
+        [self addSubview:_countLabel];
+    }
+    return self;
 }
-*/
+
+- (void)layoutSubviews {
+    [super layoutSubviews];
+    self.countLabel.backgroundColor = [UIColor colorWithRed:0.76f green:0.22f blue:0.15f alpha:1.00f];
+    self.countLabel.textColor = [UIColor whiteColor];
+    self.countLabel.layer.masksToBounds = YES;
+    self.countLabel.layer.cornerRadius = 13;
+    self.countLabel.textAlignment = NSTextAlignmentCenter;
+    self.countLabel.frame = CGRectMake(32, -13, 26, 26);
+}
 
 @end

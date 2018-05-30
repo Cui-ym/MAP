@@ -43,7 +43,7 @@
         make.height.mas_equalTo(30);
     }];
     [self.commentButton setImage:[UIImage imageNamed:@"comt"] forState:UIControlStateNormal];
-    [self.commentButton setTitle:[NSString stringWithFormat:@"（%ld）", _commentCount] forState:UIControlStateNormal];
+    [self.commentButton setTitle:[NSString stringWithFormat:@" %ld", _commentCount] forState:UIControlStateNormal];
     self.commentButton.titleLabel.font = [UIFont systemFontOfSize:15];
     [self.commentButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
     [self.commentButton addTarget:self action:@selector(clickCommentButton:) forControlEvents:UIControlEventTouchUpInside];
@@ -57,7 +57,7 @@
     [self.likeButton setImage:[UIImage imageNamed:@"like"] forState:UIControlStateNormal];
     [self.likeButton setImage:[UIImage imageNamed:@"定位"] forState:UIControlStateSelected];
     self.likeButton.titleLabel.font = [UIFont systemFontOfSize:15];
-    [self.likeButton setTitle:[NSString stringWithFormat:@"（%ld）", _likeCount] forState:UIControlStateNormal];
+    [self.likeButton setTitle:[NSString stringWithFormat:@" %ld", _likeCount] forState:UIControlStateNormal];
     [self.likeButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
     [self.likeButton addTarget:self action:@selector(clickLikeButton:) forControlEvents:UIControlEventTouchUpInside];
     

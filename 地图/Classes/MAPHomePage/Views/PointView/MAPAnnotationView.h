@@ -7,6 +7,7 @@
 //
 
 #import <BaiduMapAPI_Map/BMKAnnotationView.h>
+#import "MAPGetCommentButton.h"
 
 @protocol MAPAnnotationViewDelegate <NSObject>
 
@@ -25,12 +26,24 @@
 
 @property (nonatomic, strong) UIView *paoView;
 
-@property (nonatomic, strong) UIButton *msgButton;
+@property (nonatomic, strong) UILabel *sumLabel;
 
-@property (nonatomic, strong) UIButton *imgButton;
+@property (nonatomic, assign) int commentCount;
 
-@property (nonatomic, strong) UIButton *voiceButton;
+@property (nonatomic, assign) int mesCount;
 
-@property (nonatomic, strong) UIButton *videoButton;
+@property (nonatomic, assign) int phoCount;
+
+@property (nonatomic, assign) int vidCount;
+
+@property (nonatomic, assign) int audCount;
+
+@property (nonatomic, strong) MAPGetCommentButton *msgButton;
+
+@property (nonatomic, strong) MAPGetCommentButton *imgButton;
+
+@property (nonatomic, strong) MAPGetCommentButton *voiceButton;
+
+@property (nonatomic, strong) MAPGetCommentButton *videoButton;
 
 @end

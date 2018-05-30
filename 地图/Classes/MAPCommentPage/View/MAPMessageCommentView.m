@@ -62,13 +62,13 @@
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 10;
+    return 3;
 }
 
 - (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section {
     MAPMessageHeaderView *headerView = [[MAPMessageHeaderView alloc] init];
     headerView.nicknameLabel.text = [_commentArray[section] username];
-    headerView.commentLabel.text = [_commentArray[section] content];
+    headerView.commentLabel.text = (NSString *)[_commentArray[section] content];
     return headerView;
 }
 
@@ -83,11 +83,17 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     MAPMessageTableViewCell *messageTableViewCell = [tableView dequeueReusableCellWithIdentifier:@"messageViewCell" forIndexPath:indexPath];
     NSArray *userArray = [NSArray arrayWithObjects:@"崔一鸣", @"赵东", @"李飞艳", @"毋昕仪", @"赵泽宇", @"和书诚", @"孟晨", @"许世豪", @"李黎野", @"万建新", nil];
-    NSArray *replyArray = [NSArray arrayWithObjects:@"服务生领卡", @"哦入去皮哦额为", @"从发的是那种吗", @"加快了就离开", @"银行卡不见不发", @"文如其人", @"范德萨发", @"服务商距离看你吧", @"回复孤可激发快乐傲", @"将范德雷克多久啊", nil];
+    NSArray *replyArray = [NSArray arrayWithObjects:@"服务生领卡", @"哦入去皮哦额为", @"从发的是那种吗", @"加快放大书法书法大师发大水短发十分大算法了就", @"银行卡不见不发", @"文如其人", @"范德萨发", @"服务商距离看你吧", @"回复孤可激发快乐傲", @"将范德雷克多久啊", nil];
     messageTableViewCell.fromUser = userArray[indexPath.row];
     messageTableViewCell.toUser = userArray[9 - indexPath.row];
     messageTableViewCell.comment = replyArray[indexPath.row];
     return messageTableViewCell;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    if ([self.delegate respondsToSelector:@selector(clickTableViewCellWithSection:)]) {
+        [_delegate clickTableViewCellWithSection:(int)indexPath.section];
+    }
 }
 
 @end

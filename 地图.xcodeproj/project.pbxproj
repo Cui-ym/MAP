@@ -7,16 +7,57 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3266C628FD22EBFE9D75C1FC /* libPods-地图.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DAA3F23248CD1BA9AC4EDFF9 /* libPods-地图.a */; };
 		580EE586204507160068255E /* MAPAddPointManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 580EE585204507160068255E /* MAPAddPointManager.m */; };
+		581832C52059062800A88D7E /* libPods-地图.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DAA3F23248CD1BA9AC4EDFF9 /* libPods-地图.a */; settings = {ATTRIBUTES = (Required, ); }; };
 		581D6496202D3E6400920812 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 581D6495202D3E6300920812 /* Main.storyboard */; };
 		581D649B202E8B3700920812 /* MAPCommentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 581D649A202E8B3700920812 /* MAPCommentView.m */; };
-		581D649F202E8D3100920812 /* MAPMessageTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 581D649E202E8D3100920812 /* MAPMessageTableViewCell.m */; };
 		581D64A3202EE55C00920812 /* cancel.png in Resources */ = {isa = PBXBuildFile; fileRef = 581D64A2202EE55C00920812 /* cancel.png */; };
 		581D64A820415DA800920812 /* UILabel+LabelHeight.m in Sources */ = {isa = PBXBuildFile; fileRef = 581D64A620415DA800920812 /* UILabel+LabelHeight.m */; };
+		58499A7D209F2A7C0013C293 /* MAPAudioTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 58499A7C209F2A7C0013C293 /* MAPAudioTableViewCell.m */; };
+		5852315B208A24B200925F56 /* 播放.png in Resources */ = {isa = PBXBuildFile; fileRef = 5852315A208A24B200925F56 /* 播放.png */; };
+		587F4D1B20501A62003E33B1 /* MAPAddCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 587F4D1A20501A62003E33B1 /* MAPAddCollectionViewCell.m */; };
+		587F4D1E20501E7D003E33B1 /* MAPImageCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 587F4D1D20501E7D003E33B1 /* MAPImageCollectionViewCell.m */; };
+		5889D61E2079F3B0002420FD /* MAPImageTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5889D61D2079F3B0002420FD /* MAPImageTableViewCell.m */; };
+		58A62F1B2089DB730030D14B /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58A62F1A2089DB730030D14B /* MobileCoreServices.framework */; };
 		58B17FBF2046604A00105675 /* MAPAddCommentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 58B17FBE2046604A00105675 /* MAPAddCommentViewController.m */; };
 		58B17FC32046608F00105675 /* MAPAddCommentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 58B17FC22046608F00105675 /* MAPAddCommentView.m */; };
-		58B17FC62046933700105675 /* MAPAddTextCommentTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 58B17FC52046933700105675 /* MAPAddTextCommentTableViewCell.m */; };
+		58B18FA120AF1591003EE273 /* MAPMessageReplyTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 58B18FA020AF1591003EE273 /* MAPMessageReplyTableViewCell.m */; };
+		58B31D6A209FE2F50092AD11 /* MAPAudioButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 58B31D69209FE2F50092AD11 /* MAPAudioButton.m */; };
+		58B31D6C209FF3F30092AD11 /* sound.png in Resources */ = {isa = PBXBuildFile; fileRef = 58B31D6B209FF3F30092AD11 /* sound.png */; };
+		58B31D7420A0799E0092AD11 /* mp3lame.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 58B31D7220A0799D0092AD11 /* mp3lame.a */; };
+		58B31D7D20A1C1E20092AD11 /* MAPLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 58B31D7C20A1C1E20092AD11 /* MAPLoginViewController.m */; };
+		58B31D8020A1C1F90092AD11 /* MAPLoginView.m in Sources */ = {isa = PBXBuildFile; fileRef = 58B31D7F20A1C1F90092AD11 /* MAPLoginView.m */; };
+		58B31EFE20AACF7A0092AD11 /* MAPMessageCommentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 58B31EFD20AACF7A0092AD11 /* MAPMessageCommentView.m */; };
+		58B31F0220AACFE70092AD11 /* MAPMessageHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 58B31F0120AACFE70092AD11 /* MAPMessageHeaderView.m */; };
+		58B31F0520AADAEB0092AD11 /* MAPMessageTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 58B31F0420AADAEB0092AD11 /* MAPMessageTableViewCell.m */; };
+		58B31F0820AAFA7D0092AD11 /* MAPMessageFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 58B31F0720AAFA7D0092AD11 /* MAPMessageFooterView.m */; };
+		58B31F0C20AB22190092AD11 /* MAPReplyModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 58B31F0B20AB22190092AD11 /* MAPReplyModel.m */; };
+		58B31F4220AB22DF0092AD11 /* YYTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 58B31F0F20AB22DF0092AD11 /* YYTextView.m */; };
+		58B31F4320AB22DF0092AD11 /* YYTextMagnifier.m in Sources */ = {isa = PBXBuildFile; fileRef = 58B31F1320AB22DF0092AD11 /* YYTextMagnifier.m */; };
+		58B31F4420AB22DF0092AD11 /* YYTextContainerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 58B31F1620AB22DF0092AD11 /* YYTextContainerView.m */; };
+		58B31F4520AB22DF0092AD11 /* YYTextEffectWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 58B31F1720AB22DF0092AD11 /* YYTextEffectWindow.m */; };
+		58B31F4620AB22DF0092AD11 /* YYTextInput.m in Sources */ = {isa = PBXBuildFile; fileRef = 58B31F1920AB22DF0092AD11 /* YYTextInput.m */; };
+		58B31F4720AB22DF0092AD11 /* YYTextLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 58B31F1A20AB22DF0092AD11 /* YYTextLayout.m */; };
+		58B31F4820AB22DF0092AD11 /* YYTextLine.m in Sources */ = {isa = PBXBuildFile; fileRef = 58B31F1C20AB22DF0092AD11 /* YYTextLine.m */; };
+		58B31F4920AB22DF0092AD11 /* YYTextSelectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 58B31F1D20AB22DF0092AD11 /* YYTextSelectionView.m */; };
+		58B31F4A20AB22DF0092AD11 /* YYTextKeyboardManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 58B31F2020AB22DF0092AD11 /* YYTextKeyboardManager.m */; };
+		58B31F4B20AB22DF0092AD11 /* YYTextDebugOption.m in Sources */ = {isa = PBXBuildFile; fileRef = 58B31F2220AB22DF0092AD11 /* YYTextDebugOption.m */; };
+		58B31F4C20AB22DF0092AD11 /* YYLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 58B31F2320AB22DF0092AD11 /* YYLabel.m */; };
+		58B31F4D20AB22DF0092AD11 /* YYTextRunDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 58B31F2720AB22DF0092AD11 /* YYTextRunDelegate.m */; };
+		58B31F4E20AB22DF0092AD11 /* YYTextParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 58B31F2820AB22DF0092AD11 /* YYTextParser.m */; };
+		58B31F4F20AB22DF0092AD11 /* YYTextAttribute.m in Sources */ = {isa = PBXBuildFile; fileRef = 58B31F2C20AB22DF0092AD11 /* YYTextAttribute.m */; };
+		58B31F5020AB22DF0092AD11 /* YYTextArchiver.m in Sources */ = {isa = PBXBuildFile; fileRef = 58B31F2E20AB22DF0092AD11 /* YYTextArchiver.m */; };
+		58B31F5120AB22DF0092AD11 /* YYTextRubyAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 58B31F2F20AB22DF0092AD11 /* YYTextRubyAnnotation.m */; };
+		58B31F5220AB22DF0092AD11 /* YYTextUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 58B31F3220AB22DF0092AD11 /* YYTextUtilities.m */; };
+		58B31F5320AB22DF0092AD11 /* NSParagraphStyle+YYText.m in Sources */ = {isa = PBXBuildFile; fileRef = 58B31F3320AB22DF0092AD11 /* NSParagraphStyle+YYText.m */; };
+		58B31F5420AB22DF0092AD11 /* NSAttributedString+YYText.m in Sources */ = {isa = PBXBuildFile; fileRef = 58B31F3420AB22DF0092AD11 /* NSAttributedString+YYText.m */; };
+		58B31F5520AB22DF0092AD11 /* UIPasteboard+YYText.m in Sources */ = {isa = PBXBuildFile; fileRef = 58B31F3720AB22DF0092AD11 /* UIPasteboard+YYText.m */; };
+		58B31F5620AB22DF0092AD11 /* YYTextTransaction.m in Sources */ = {isa = PBXBuildFile; fileRef = 58B31F3B20AB22DF0092AD11 /* YYTextTransaction.m */; };
+		58B31F5720AB22DF0092AD11 /* UIView+YYText.m in Sources */ = {isa = PBXBuildFile; fileRef = 58B31F3C20AB22DF0092AD11 /* UIView+YYText.m */; };
+		58B31F5820AB22DF0092AD11 /* YYTextAsyncLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 58B31F3F20AB22DF0092AD11 /* YYTextAsyncLayer.m */; };
+		58B31F5920AB22DF0092AD11 /* YYTextWeakProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 58B31F4020AB22DF0092AD11 /* YYTextWeakProxy.m */; };
+		58CC7A9D2086CB0100A706A2 /* MAPCommentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 58CC7A9C2086CB0100A706A2 /* MAPCommentViewController.m */; };
+		58D211D520529EC1006FF394 /* MAPGetCommentButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 58D211D420529EC1006FF394 /* MAPGetCommentButton.m */; };
 		58D413ED202986ED00277537 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 58D413EC202986ED00277537 /* AppDelegate.m */; };
 		58D413F5202986ED00277537 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 58D413F4202986ED00277537 /* Assets.xcassets */; };
 		58D413F8202986ED00277537 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 58D413F6202986ED00277537 /* LaunchScreen.storyboard */; };
@@ -104,6 +145,15 @@
 		58D4151720298F4000277537 /* MAPCoordinateModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 58D4151620298F4000277537 /* MAPCoordinateModel.m */; };
 		58D4151A20298FB200277537 /* MAPCoordinateManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 58D4151920298FB200277537 /* MAPCoordinateManager.m */; };
 		58D4151D202990E900277537 /* MAPHomeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 58D4151C202990E900277537 /* MAPHomeView.m */; };
+		58D71BFF208C28050077A20E /* MAPVideoTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 58D71BFE208C28050077A20E /* MAPVideoTableViewCell.m */; };
+		58E8033C208F53320062D694 /* MAPVideoBottomView.m in Sources */ = {isa = PBXBuildFile; fileRef = 58E8033B208F53320062D694 /* MAPVideoBottomView.m */; };
+		58E8033E208F60340062D694 /* 点.png in Resources */ = {isa = PBXBuildFile; fileRef = 58E8033D208F60340062D694 /* 点.png */; };
+		58E80340208F60C20062D694 /* 暂停.png in Resources */ = {isa = PBXBuildFile; fileRef = 58E8033F208F60C20062D694 /* 暂停.png */; };
+		58FB8F9520AC6ED100ED44B2 /* 头像.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 58FB8F9420AC6ED100ED44B2 /* 头像.JPG */; };
+		58FB8F9B20AC728800ED44B2 /* MAPReplyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 58FB8F9A20AC728800ED44B2 /* MAPReplyViewController.m */; };
+		58FB8F9E20AC729900ED44B2 /* MAPReplyView.m in Sources */ = {isa = PBXBuildFile; fileRef = 58FB8F9D20AC729900ED44B2 /* MAPReplyView.m */; };
+		58FB8FA120AD12CB00ED44B2 /* MAPReplyButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 58FB8FA020AD12CB00ED44B2 /* MAPReplyButton.m */; };
+		58FB8FA820AD7FE800ED44B2 /* MAPMessageReplyHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 58FB8FA720AD7FE800ED44B2 /* MAPMessageReplyHeaderView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -127,20 +177,107 @@
 		4D690EE13870CBC5412868A8 /* Pods-地图.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-地图.debug.xcconfig"; path = "Pods/Target Support Files/Pods-地图/Pods-地图.debug.xcconfig"; sourceTree = "<group>"; };
 		580EE584204507160068255E /* MAPAddPointManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MAPAddPointManager.h; sourceTree = "<group>"; };
 		580EE585204507160068255E /* MAPAddPointManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MAPAddPointManager.m; sourceTree = "<group>"; };
+		581832C72059093A00A88D7E /* libmp3lame.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libmp3lame.a; sourceTree = "<group>"; };
+		581832C82059093A00A88D7E /* lame.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = lame.h; sourceTree = "<group>"; };
+		581832CB20590A8600A88D7E /* mp3lame.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = mp3lame.a; path = ../../../Downloads/Lame/mp3lame.a; sourceTree = "<group>"; };
+		581832D120590ADA00A88D7E /* libTZImagePickerController.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libTZImagePickerController.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		5818871620580B2800268C16 /* libmp3lame.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libmp3lame.a; sourceTree = "<group>"; };
+		5818871720580B2800268C16 /* lame.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = lame.h; sourceTree = "<group>"; };
 		581D6495202D3E6300920812 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		581D6499202E8B3700920812 /* MAPCommentView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MAPCommentView.h; sourceTree = "<group>"; };
 		581D649A202E8B3700920812 /* MAPCommentView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MAPCommentView.m; sourceTree = "<group>"; };
-		581D649D202E8D3100920812 /* MAPMessageTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MAPMessageTableViewCell.h; sourceTree = "<group>"; };
-		581D649E202E8D3100920812 /* MAPMessageTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MAPMessageTableViewCell.m; sourceTree = "<group>"; };
 		581D64A2202EE55C00920812 /* cancel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cancel.png; sourceTree = "<group>"; };
 		581D64A620415DA800920812 /* UILabel+LabelHeight.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+LabelHeight.m"; sourceTree = "<group>"; };
 		581D64A720415DA800920812 /* UILabel+LabelHeight.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+LabelHeight.h"; sourceTree = "<group>"; };
+		58499A7B209F2A7C0013C293 /* MAPAudioTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MAPAudioTableViewCell.h; sourceTree = "<group>"; };
+		58499A7C209F2A7C0013C293 /* MAPAudioTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MAPAudioTableViewCell.m; sourceTree = "<group>"; };
+		5852315A208A24B200925F56 /* 播放.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "播放.png"; path = "../../../../Downloads/播放.png"; sourceTree = "<group>"; };
+		587F4D1920501A62003E33B1 /* MAPAddCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MAPAddCollectionViewCell.h; sourceTree = "<group>"; };
+		587F4D1A20501A62003E33B1 /* MAPAddCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MAPAddCollectionViewCell.m; sourceTree = "<group>"; };
+		587F4D1C20501E7D003E33B1 /* MAPImageCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MAPImageCollectionViewCell.h; sourceTree = "<group>"; };
+		587F4D1D20501E7D003E33B1 /* MAPImageCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MAPImageCollectionViewCell.m; sourceTree = "<group>"; };
+		5889D61C2079F3B0002420FD /* MAPImageTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MAPImageTableViewCell.h; sourceTree = "<group>"; };
+		5889D61D2079F3B0002420FD /* MAPImageTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MAPImageTableViewCell.m; sourceTree = "<group>"; };
+		58A62F192089D7F20030D14B /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		58A62F1A2089DB730030D14B /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		58B17FBD2046604A00105675 /* MAPAddCommentViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MAPAddCommentViewController.h; sourceTree = "<group>"; };
 		58B17FBE2046604A00105675 /* MAPAddCommentViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MAPAddCommentViewController.m; sourceTree = "<group>"; };
 		58B17FC12046608F00105675 /* MAPAddCommentView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MAPAddCommentView.h; sourceTree = "<group>"; };
 		58B17FC22046608F00105675 /* MAPAddCommentView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MAPAddCommentView.m; sourceTree = "<group>"; };
-		58B17FC42046933700105675 /* MAPAddTextCommentTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MAPAddTextCommentTableViewCell.h; sourceTree = "<group>"; };
-		58B17FC52046933700105675 /* MAPAddTextCommentTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MAPAddTextCommentTableViewCell.m; sourceTree = "<group>"; };
+		58B18F9F20AF1591003EE273 /* MAPMessageReplyTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MAPMessageReplyTableViewCell.h; sourceTree = "<group>"; };
+		58B18FA020AF1591003EE273 /* MAPMessageReplyTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MAPMessageReplyTableViewCell.m; sourceTree = "<group>"; };
+		58B31D68209FE2F50092AD11 /* MAPAudioButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MAPAudioButton.h; sourceTree = "<group>"; };
+		58B31D69209FE2F50092AD11 /* MAPAudioButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MAPAudioButton.m; sourceTree = "<group>"; };
+		58B31D6B209FF3F30092AD11 /* sound.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sound.png; sourceTree = "<group>"; };
+		58B31D7220A0799D0092AD11 /* mp3lame.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = mp3lame.a; sourceTree = "<group>"; };
+		58B31D7320A0799D0092AD11 /* lame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lame.h; sourceTree = "<group>"; };
+		58B31D7B20A1C1E20092AD11 /* MAPLoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MAPLoginViewController.h; sourceTree = "<group>"; };
+		58B31D7C20A1C1E20092AD11 /* MAPLoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MAPLoginViewController.m; sourceTree = "<group>"; };
+		58B31D7E20A1C1F90092AD11 /* MAPLoginView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MAPLoginView.h; sourceTree = "<group>"; };
+		58B31D7F20A1C1F90092AD11 /* MAPLoginView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MAPLoginView.m; sourceTree = "<group>"; };
+		58B31EFC20AACF7A0092AD11 /* MAPMessageCommentView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MAPMessageCommentView.h; sourceTree = "<group>"; };
+		58B31EFD20AACF7A0092AD11 /* MAPMessageCommentView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MAPMessageCommentView.m; sourceTree = "<group>"; };
+		58B31F0020AACFE70092AD11 /* MAPMessageHeaderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MAPMessageHeaderView.h; sourceTree = "<group>"; };
+		58B31F0120AACFE70092AD11 /* MAPMessageHeaderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MAPMessageHeaderView.m; sourceTree = "<group>"; };
+		58B31F0320AADAEB0092AD11 /* MAPMessageTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MAPMessageTableViewCell.h; sourceTree = "<group>"; };
+		58B31F0420AADAEB0092AD11 /* MAPMessageTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MAPMessageTableViewCell.m; sourceTree = "<group>"; };
+		58B31F0620AAFA7D0092AD11 /* MAPMessageFooterView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MAPMessageFooterView.h; sourceTree = "<group>"; };
+		58B31F0720AAFA7D0092AD11 /* MAPMessageFooterView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MAPMessageFooterView.m; sourceTree = "<group>"; };
+		58B31F0A20AB22190092AD11 /* MAPReplyModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MAPReplyModel.h; sourceTree = "<group>"; };
+		58B31F0B20AB22190092AD11 /* MAPReplyModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MAPReplyModel.m; sourceTree = "<group>"; };
+		58B31F0E20AB22DF0092AD11 /* YYText.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYText.h; sourceTree = "<group>"; };
+		58B31F0F20AB22DF0092AD11 /* YYTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYTextView.m; sourceTree = "<group>"; };
+		58B31F1120AB22DF0092AD11 /* YYTextSelectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYTextSelectionView.h; sourceTree = "<group>"; };
+		58B31F1220AB22DF0092AD11 /* YYTextLine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYTextLine.h; sourceTree = "<group>"; };
+		58B31F1320AB22DF0092AD11 /* YYTextMagnifier.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYTextMagnifier.m; sourceTree = "<group>"; };
+		58B31F1420AB22DF0092AD11 /* YYTextLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYTextLayout.h; sourceTree = "<group>"; };
+		58B31F1520AB22DF0092AD11 /* YYTextKeyboardManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYTextKeyboardManager.h; sourceTree = "<group>"; };
+		58B31F1620AB22DF0092AD11 /* YYTextContainerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYTextContainerView.m; sourceTree = "<group>"; };
+		58B31F1720AB22DF0092AD11 /* YYTextEffectWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYTextEffectWindow.m; sourceTree = "<group>"; };
+		58B31F1820AB22DF0092AD11 /* YYTextDebugOption.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYTextDebugOption.h; sourceTree = "<group>"; };
+		58B31F1920AB22DF0092AD11 /* YYTextInput.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYTextInput.m; sourceTree = "<group>"; };
+		58B31F1A20AB22DF0092AD11 /* YYTextLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYTextLayout.m; sourceTree = "<group>"; };
+		58B31F1B20AB22DF0092AD11 /* YYTextMagnifier.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYTextMagnifier.h; sourceTree = "<group>"; };
+		58B31F1C20AB22DF0092AD11 /* YYTextLine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYTextLine.m; sourceTree = "<group>"; };
+		58B31F1D20AB22DF0092AD11 /* YYTextSelectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYTextSelectionView.m; sourceTree = "<group>"; };
+		58B31F1E20AB22DF0092AD11 /* YYTextEffectWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYTextEffectWindow.h; sourceTree = "<group>"; };
+		58B31F1F20AB22DF0092AD11 /* YYTextContainerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYTextContainerView.h; sourceTree = "<group>"; };
+		58B31F2020AB22DF0092AD11 /* YYTextKeyboardManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYTextKeyboardManager.m; sourceTree = "<group>"; };
+		58B31F2120AB22DF0092AD11 /* YYTextInput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYTextInput.h; sourceTree = "<group>"; };
+		58B31F2220AB22DF0092AD11 /* YYTextDebugOption.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYTextDebugOption.m; sourceTree = "<group>"; };
+		58B31F2320AB22DF0092AD11 /* YYLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYLabel.m; sourceTree = "<group>"; };
+		58B31F2420AB22DF0092AD11 /* YYTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYTextView.h; sourceTree = "<group>"; };
+		58B31F2620AB22DF0092AD11 /* YYTextAttribute.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYTextAttribute.h; sourceTree = "<group>"; };
+		58B31F2720AB22DF0092AD11 /* YYTextRunDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYTextRunDelegate.m; sourceTree = "<group>"; };
+		58B31F2820AB22DF0092AD11 /* YYTextParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYTextParser.m; sourceTree = "<group>"; };
+		58B31F2920AB22DF0092AD11 /* YYTextRubyAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYTextRubyAnnotation.h; sourceTree = "<group>"; };
+		58B31F2A20AB22DF0092AD11 /* YYTextArchiver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYTextArchiver.h; sourceTree = "<group>"; };
+		58B31F2B20AB22DF0092AD11 /* YYTextRunDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYTextRunDelegate.h; sourceTree = "<group>"; };
+		58B31F2C20AB22DF0092AD11 /* YYTextAttribute.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYTextAttribute.m; sourceTree = "<group>"; };
+		58B31F2D20AB22DF0092AD11 /* YYTextParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYTextParser.h; sourceTree = "<group>"; };
+		58B31F2E20AB22DF0092AD11 /* YYTextArchiver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYTextArchiver.m; sourceTree = "<group>"; };
+		58B31F2F20AB22DF0092AD11 /* YYTextRubyAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYTextRubyAnnotation.m; sourceTree = "<group>"; };
+		58B31F3020AB22DF0092AD11 /* YYLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYLabel.h; sourceTree = "<group>"; };
+		58B31F3220AB22DF0092AD11 /* YYTextUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYTextUtilities.m; sourceTree = "<group>"; };
+		58B31F3320AB22DF0092AD11 /* NSParagraphStyle+YYText.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSParagraphStyle+YYText.m"; sourceTree = "<group>"; };
+		58B31F3420AB22DF0092AD11 /* NSAttributedString+YYText.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSAttributedString+YYText.m"; sourceTree = "<group>"; };
+		58B31F3520AB22DF0092AD11 /* UIView+YYText.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+YYText.h"; sourceTree = "<group>"; };
+		58B31F3620AB22DF0092AD11 /* YYTextTransaction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYTextTransaction.h; sourceTree = "<group>"; };
+		58B31F3720AB22DF0092AD11 /* UIPasteboard+YYText.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIPasteboard+YYText.m"; sourceTree = "<group>"; };
+		58B31F3820AB22DF0092AD11 /* YYTextWeakProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYTextWeakProxy.h; sourceTree = "<group>"; };
+		58B31F3920AB22DF0092AD11 /* YYTextAsyncLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYTextAsyncLayer.h; sourceTree = "<group>"; };
+		58B31F3A20AB22DF0092AD11 /* YYTextUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYTextUtilities.h; sourceTree = "<group>"; };
+		58B31F3B20AB22DF0092AD11 /* YYTextTransaction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYTextTransaction.m; sourceTree = "<group>"; };
+		58B31F3C20AB22DF0092AD11 /* UIView+YYText.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+YYText.m"; sourceTree = "<group>"; };
+		58B31F3D20AB22DF0092AD11 /* NSAttributedString+YYText.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSAttributedString+YYText.h"; sourceTree = "<group>"; };
+		58B31F3E20AB22DF0092AD11 /* NSParagraphStyle+YYText.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSParagraphStyle+YYText.h"; sourceTree = "<group>"; };
+		58B31F3F20AB22DF0092AD11 /* YYTextAsyncLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYTextAsyncLayer.m; sourceTree = "<group>"; };
+		58B31F4020AB22DF0092AD11 /* YYTextWeakProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYTextWeakProxy.m; sourceTree = "<group>"; };
+		58B31F4120AB22DF0092AD11 /* UIPasteboard+YYText.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIPasteboard+YYText.h"; sourceTree = "<group>"; };
+		58CC7A9B2086CB0100A706A2 /* MAPCommentViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MAPCommentViewController.h; sourceTree = "<group>"; };
+		58CC7A9C2086CB0100A706A2 /* MAPCommentViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MAPCommentViewController.m; sourceTree = "<group>"; };
+		58D211D320529EC1006FF394 /* MAPGetCommentButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MAPGetCommentButton.h; sourceTree = "<group>"; };
+		58D211D420529EC1006FF394 /* MAPGetCommentButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MAPGetCommentButton.m; sourceTree = "<group>"; };
 		58D413E8202986ED00277537 /* 地图.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "地图.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		58D413EB202986ED00277537 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		58D413EC202986ED00277537 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -302,6 +439,21 @@
 		58D4151920298FB200277537 /* MAPCoordinateManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MAPCoordinateManager.m; sourceTree = "<group>"; };
 		58D4151B202990E900277537 /* MAPHomeView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MAPHomeView.h; sourceTree = "<group>"; };
 		58D4151C202990E900277537 /* MAPHomeView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MAPHomeView.m; sourceTree = "<group>"; };
+		58D71BFD208C28050077A20E /* MAPVideoTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MAPVideoTableViewCell.h; sourceTree = "<group>"; };
+		58D71BFE208C28050077A20E /* MAPVideoTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MAPVideoTableViewCell.m; sourceTree = "<group>"; };
+		58E8033A208F53320062D694 /* MAPVideoBottomView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MAPVideoBottomView.h; sourceTree = "<group>"; };
+		58E8033B208F53320062D694 /* MAPVideoBottomView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MAPVideoBottomView.m; sourceTree = "<group>"; };
+		58E8033D208F60340062D694 /* 点.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "点.png"; path = "../../../../Downloads/点.png"; sourceTree = "<group>"; };
+		58E8033F208F60C20062D694 /* 暂停.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "暂停.png"; path = "../../../../Downloads/暂停.png"; sourceTree = "<group>"; };
+		58FB8F9420AC6ED100ED44B2 /* 头像.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "头像.JPG"; sourceTree = "<group>"; };
+		58FB8F9920AC728800ED44B2 /* MAPReplyViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MAPReplyViewController.h; sourceTree = "<group>"; };
+		58FB8F9A20AC728800ED44B2 /* MAPReplyViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MAPReplyViewController.m; sourceTree = "<group>"; };
+		58FB8F9C20AC729900ED44B2 /* MAPReplyView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MAPReplyView.h; sourceTree = "<group>"; };
+		58FB8F9D20AC729900ED44B2 /* MAPReplyView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MAPReplyView.m; sourceTree = "<group>"; };
+		58FB8F9F20AD12CB00ED44B2 /* MAPReplyButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MAPReplyButton.h; sourceTree = "<group>"; };
+		58FB8FA020AD12CB00ED44B2 /* MAPReplyButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MAPReplyButton.m; sourceTree = "<group>"; };
+		58FB8FA620AD7FE800ED44B2 /* MAPMessageReplyHeaderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MAPMessageReplyHeaderView.h; sourceTree = "<group>"; };
+		58FB8FA720AD7FE800ED44B2 /* MAPMessageReplyHeaderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MAPMessageReplyHeaderView.m; sourceTree = "<group>"; };
 		7FB8D254551AC9FB05777F90 /* Pods-地图.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-地图.release.xcconfig"; path = "Pods/Target Support Files/Pods-地图/Pods-地图.release.xcconfig"; sourceTree = "<group>"; };
 		DAA3F23248CD1BA9AC4EDFF9 /* libPods-地图.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-地图.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -311,7 +463,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3266C628FD22EBFE9D75C1FC /* libPods-地图.a in Frameworks */,
+				58A62F1B2089DB730030D14B /* MobileCoreServices.framework in Frameworks */,
+				581832C52059062800A88D7E /* libPods-地图.a in Frameworks */,
+				58B31D7420A0799E0092AD11 /* mp3lame.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -332,20 +486,44 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		581D649C202E8CCB00920812 /* CommentView */ = {
+		581832C62059093A00A88D7E /* Lame */ = {
+			isa = PBXGroup;
+			children = (
+				581832C72059093A00A88D7E /* libmp3lame.a */,
+				581832C82059093A00A88D7E /* lame.h */,
+			);
+			name = Lame;
+			path = ../../../Downloads/Lame;
+			sourceTree = "<group>";
+		};
+		5818871520580B2800268C16 /* Lame */ = {
+			isa = PBXGroup;
+			children = (
+				5818871620580B2800268C16 /* libmp3lame.a */,
+				5818871720580B2800268C16 /* lame.h */,
+			);
+			name = Lame;
+			path = ../../../Downloads/Lame;
+			sourceTree = "<group>";
+		};
+		581D649C202E8CCB00920812 /* View */ = {
 			isa = PBXGroup;
 			children = (
 				581D6499202E8B3700920812 /* MAPCommentView.h */,
 				581D649A202E8B3700920812 /* MAPCommentView.m */,
-				581D649D202E8D3100920812 /* MAPMessageTableViewCell.h */,
-				581D649E202E8D3100920812 /* MAPMessageTableViewCell.m */,
+				58B31EFC20AACF7A0092AD11 /* MAPMessageCommentView.h */,
+				58B31EFD20AACF7A0092AD11 /* MAPMessageCommentView.m */,
+				58B31EFF20AACFD40092AD11 /* MessageTableView */,
+				5889D61F207A1325002420FD /* CommentTableViewCells */,
 			);
-			path = CommentView;
+			path = View;
 			sourceTree = "<group>";
 		};
 		581D64A420415D6A00920812 /* MAPOthers */ = {
 			isa = PBXGroup;
 			children = (
+				58B31D67209FE2D90092AD11 /* AudioButton */,
+				58E80339208F53150062D694 /* VideoBottomView */,
 				581D64A520415DA800920812 /* LabelHeight */,
 			);
 			path = MAPOthers;
@@ -354,8 +532,8 @@
 		581D64A520415DA800920812 /* LabelHeight */ = {
 			isa = PBXGroup;
 			children = (
-				581D64A620415DA800920812 /* UILabel+LabelHeight.m */,
 				581D64A720415DA800920812 /* UILabel+LabelHeight.h */,
+				581D64A620415DA800920812 /* UILabel+LabelHeight.m */,
 			);
 			path = LabelHeight;
 			sourceTree = "<group>";
@@ -363,10 +541,27 @@
 		581D64A920415F0A00920812 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				58B31D7720A1C17A0092AD11 /* MAPLoginPage */,
 				58D414FA20298B7B00277537 /* MAPHomePage */,
+				58B31D8120A3D6C70092AD11 /* MAPCommentPage */,
+				58FB8F9620AC724600ED44B2 /* MAPReplyPage */,
 				581D64A420415D6A00920812 /* MAPOthers */,
+				58D4150E20298DDE00277537 /* Manager */,
 			);
 			path = Classes;
+			sourceTree = "<group>";
+		};
+		5889D61F207A1325002420FD /* CommentTableViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				58499A7B209F2A7C0013C293 /* MAPAudioTableViewCell.h */,
+				58499A7C209F2A7C0013C293 /* MAPAudioTableViewCell.m */,
+				5889D61C2079F3B0002420FD /* MAPImageTableViewCell.h */,
+				5889D61D2079F3B0002420FD /* MAPImageTableViewCell.m */,
+				58D71BFD208C28050077A20E /* MAPVideoTableViewCell.h */,
+				58D71BFE208C28050077A20E /* MAPVideoTableViewCell.m */,
+			);
+			path = CommentTableViewCells;
 			sourceTree = "<group>";
 		};
 		58B17FBB20465FE600105675 /* HomeController */ = {
@@ -392,12 +587,181 @@
 			children = (
 				58B17FC12046608F00105675 /* MAPAddCommentView.h */,
 				58B17FC22046608F00105675 /* MAPAddCommentView.m */,
-				58B17FC42046933700105675 /* MAPAddTextCommentTableViewCell.h */,
-				58B17FC52046933700105675 /* MAPAddTextCommentTableViewCell.m */,
+				587F4D1920501A62003E33B1 /* MAPAddCollectionViewCell.h */,
+				587F4D1A20501A62003E33B1 /* MAPAddCollectionViewCell.m */,
+				587F4D1C20501E7D003E33B1 /* MAPImageCollectionViewCell.h */,
+				587F4D1D20501E7D003E33B1 /* MAPImageCollectionViewCell.m */,
 			);
 			name = AddCommentView;
 			path = "地图/Classes/MAPHomePage/Views/AddCommentView";
 			sourceTree = SOURCE_ROOT;
+		};
+		58B31D67209FE2D90092AD11 /* AudioButton */ = {
+			isa = PBXGroup;
+			children = (
+				58B31D68209FE2F50092AD11 /* MAPAudioButton.h */,
+				58B31D69209FE2F50092AD11 /* MAPAudioButton.m */,
+			);
+			path = AudioButton;
+			sourceTree = "<group>";
+		};
+		58B31D7120A0799D0092AD11 /* Lame */ = {
+			isa = PBXGroup;
+			children = (
+				58B31D7220A0799D0092AD11 /* mp3lame.a */,
+				58B31D7320A0799D0092AD11 /* lame.h */,
+			);
+			path = Lame;
+			sourceTree = "<group>";
+		};
+		58B31D7720A1C17A0092AD11 /* MAPLoginPage */ = {
+			isa = PBXGroup;
+			children = (
+				58B31D7920A1C19F0092AD11 /* Controllers */,
+				58B31D7A20A1C1AC0092AD11 /* Views */,
+			);
+			path = MAPLoginPage;
+			sourceTree = "<group>";
+		};
+		58B31D7920A1C19F0092AD11 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				58B31D7B20A1C1E20092AD11 /* MAPLoginViewController.h */,
+				58B31D7C20A1C1E20092AD11 /* MAPLoginViewController.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		58B31D7A20A1C1AC0092AD11 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				58B31D7E20A1C1F90092AD11 /* MAPLoginView.h */,
+				58B31D7F20A1C1F90092AD11 /* MAPLoginView.m */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		58B31D8120A3D6C70092AD11 /* MAPCommentPage */ = {
+			isa = PBXGroup;
+			children = (
+				58B31F0920AB21CA0092AD11 /* Model */,
+				58CC7A9A2086CACB00A706A2 /* Controller */,
+				581D649C202E8CCB00920812 /* View */,
+			);
+			name = MAPCommentPage;
+			path = "地图/Classes/MAPCommentPage";
+			sourceTree = SOURCE_ROOT;
+		};
+		58B31EFF20AACFD40092AD11 /* MessageTableView */ = {
+			isa = PBXGroup;
+			children = (
+				58B31F0020AACFE70092AD11 /* MAPMessageHeaderView.h */,
+				58B31F0120AACFE70092AD11 /* MAPMessageHeaderView.m */,
+				58B31F0620AAFA7D0092AD11 /* MAPMessageFooterView.h */,
+				58B31F0720AAFA7D0092AD11 /* MAPMessageFooterView.m */,
+				58B31F0320AADAEB0092AD11 /* MAPMessageTableViewCell.h */,
+				58B31F0420AADAEB0092AD11 /* MAPMessageTableViewCell.m */,
+			);
+			path = MessageTableView;
+			sourceTree = "<group>";
+		};
+		58B31F0920AB21CA0092AD11 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				58B31F0A20AB22190092AD11 /* MAPReplyModel.h */,
+				58B31F0B20AB22190092AD11 /* MAPReplyModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		58B31F0D20AB22DF0092AD11 /* YYText */ = {
+			isa = PBXGroup;
+			children = (
+				58B31F0E20AB22DF0092AD11 /* YYText.h */,
+				58B31F0F20AB22DF0092AD11 /* YYTextView.m */,
+				58B31F1020AB22DF0092AD11 /* Component */,
+				58B31F2320AB22DF0092AD11 /* YYLabel.m */,
+				58B31F2420AB22DF0092AD11 /* YYTextView.h */,
+				58B31F2520AB22DF0092AD11 /* String */,
+				58B31F3020AB22DF0092AD11 /* YYLabel.h */,
+				58B31F3120AB22DF0092AD11 /* Utility */,
+			);
+			path = YYText;
+			sourceTree = "<group>";
+		};
+		58B31F1020AB22DF0092AD11 /* Component */ = {
+			isa = PBXGroup;
+			children = (
+				58B31F1120AB22DF0092AD11 /* YYTextSelectionView.h */,
+				58B31F1220AB22DF0092AD11 /* YYTextLine.h */,
+				58B31F1320AB22DF0092AD11 /* YYTextMagnifier.m */,
+				58B31F1420AB22DF0092AD11 /* YYTextLayout.h */,
+				58B31F1520AB22DF0092AD11 /* YYTextKeyboardManager.h */,
+				58B31F1620AB22DF0092AD11 /* YYTextContainerView.m */,
+				58B31F1720AB22DF0092AD11 /* YYTextEffectWindow.m */,
+				58B31F1820AB22DF0092AD11 /* YYTextDebugOption.h */,
+				58B31F1920AB22DF0092AD11 /* YYTextInput.m */,
+				58B31F1A20AB22DF0092AD11 /* YYTextLayout.m */,
+				58B31F1B20AB22DF0092AD11 /* YYTextMagnifier.h */,
+				58B31F1C20AB22DF0092AD11 /* YYTextLine.m */,
+				58B31F1D20AB22DF0092AD11 /* YYTextSelectionView.m */,
+				58B31F1E20AB22DF0092AD11 /* YYTextEffectWindow.h */,
+				58B31F1F20AB22DF0092AD11 /* YYTextContainerView.h */,
+				58B31F2020AB22DF0092AD11 /* YYTextKeyboardManager.m */,
+				58B31F2120AB22DF0092AD11 /* YYTextInput.h */,
+				58B31F2220AB22DF0092AD11 /* YYTextDebugOption.m */,
+			);
+			path = Component;
+			sourceTree = "<group>";
+		};
+		58B31F2520AB22DF0092AD11 /* String */ = {
+			isa = PBXGroup;
+			children = (
+				58B31F2620AB22DF0092AD11 /* YYTextAttribute.h */,
+				58B31F2720AB22DF0092AD11 /* YYTextRunDelegate.m */,
+				58B31F2820AB22DF0092AD11 /* YYTextParser.m */,
+				58B31F2920AB22DF0092AD11 /* YYTextRubyAnnotation.h */,
+				58B31F2A20AB22DF0092AD11 /* YYTextArchiver.h */,
+				58B31F2B20AB22DF0092AD11 /* YYTextRunDelegate.h */,
+				58B31F2C20AB22DF0092AD11 /* YYTextAttribute.m */,
+				58B31F2D20AB22DF0092AD11 /* YYTextParser.h */,
+				58B31F2E20AB22DF0092AD11 /* YYTextArchiver.m */,
+				58B31F2F20AB22DF0092AD11 /* YYTextRubyAnnotation.m */,
+			);
+			path = String;
+			sourceTree = "<group>";
+		};
+		58B31F3120AB22DF0092AD11 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				58B31F3220AB22DF0092AD11 /* YYTextUtilities.m */,
+				58B31F3320AB22DF0092AD11 /* NSParagraphStyle+YYText.m */,
+				58B31F3420AB22DF0092AD11 /* NSAttributedString+YYText.m */,
+				58B31F3520AB22DF0092AD11 /* UIView+YYText.h */,
+				58B31F3620AB22DF0092AD11 /* YYTextTransaction.h */,
+				58B31F3720AB22DF0092AD11 /* UIPasteboard+YYText.m */,
+				58B31F3820AB22DF0092AD11 /* YYTextWeakProxy.h */,
+				58B31F3920AB22DF0092AD11 /* YYTextAsyncLayer.h */,
+				58B31F3A20AB22DF0092AD11 /* YYTextUtilities.h */,
+				58B31F3B20AB22DF0092AD11 /* YYTextTransaction.m */,
+				58B31F3C20AB22DF0092AD11 /* UIView+YYText.m */,
+				58B31F3D20AB22DF0092AD11 /* NSAttributedString+YYText.h */,
+				58B31F3E20AB22DF0092AD11 /* NSParagraphStyle+YYText.h */,
+				58B31F3F20AB22DF0092AD11 /* YYTextAsyncLayer.m */,
+				58B31F4020AB22DF0092AD11 /* YYTextWeakProxy.m */,
+				58B31F4120AB22DF0092AD11 /* UIPasteboard+YYText.h */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		58CC7A9A2086CACB00A706A2 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				58CC7A9B2086CB0100A706A2 /* MAPCommentViewController.h */,
+				58CC7A9C2086CB0100A706A2 /* MAPCommentViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
 		};
 		58D413DF202986ED00277537 = {
 			isa = PBXGroup;
@@ -649,6 +1013,8 @@
 		58D414CF202989F500277537 /* ThirdParty */ = {
 			isa = PBXGroup;
 			children = (
+				58B31F0D20AB22DF0092AD11 /* YYText */,
+				58B31D7120A0799D0092AD11 /* Lame */,
 				58D4141D202989CA00277537 /* AFNetworking */,
 				58D41484202989CB00277537 /* JSONModel */,
 				58D4146A202989CA00277537 /* Masonry */,
@@ -660,6 +1026,11 @@
 		58D414D020298A0500277537 /* 素材 */ = {
 			isa = PBXGroup;
 			children = (
+				58FB8F9420AC6ED100ED44B2 /* 头像.JPG */,
+				58B31D6B209FF3F30092AD11 /* sound.png */,
+				58E8033D208F60340062D694 /* 点.png */,
+				58E8033F208F60C20062D694 /* 暂停.png */,
+				5852315A208A24B200925F56 /* 播放.png */,
 				581D64A2202EE55C00920812 /* cancel.png */,
 				58D414D120298A0500277537 /* info.png */,
 				58D414D220298A0500277537 /* add.png */,
@@ -691,7 +1062,6 @@
 				58D414FC20298B7B00277537 /* Controllers */,
 				58D414FD20298B7B00277537 /* Views */,
 				58D414FB20298B7B00277537 /* Model */,
-				58D4150E20298DDE00277537 /* Manager */,
 			);
 			path = MAPHomePage;
 			sourceTree = "<group>";
@@ -723,7 +1093,6 @@
 			children = (
 				58D4151E202990F800277537 /* HomeView */,
 				58D4150120298C2500277537 /* PointView */,
-				581D649C202E8CCB00920812 /* CommentView */,
 				58B17FC02046607200105675 /* AddCommentView */,
 			);
 			path = Views;
@@ -734,6 +1103,8 @@
 			children = (
 				58D4150B20298D3600277537 /* MAPAnnotationView.h */,
 				58D4150C20298D3600277537 /* MAPAnnotationView.m */,
+				58D211D320529EC1006FF394 /* MAPGetCommentButton.h */,
+				58D211D420529EC1006FF394 /* MAPGetCommentButton.m */,
 			);
 			path = PointView;
 			sourceTree = "<group>";
@@ -758,6 +1129,57 @@
 			path = HomeView;
 			sourceTree = "<group>";
 		};
+		58E80339208F53150062D694 /* VideoBottomView */ = {
+			isa = PBXGroup;
+			children = (
+				58E8033A208F53320062D694 /* MAPVideoBottomView.h */,
+				58E8033B208F53320062D694 /* MAPVideoBottomView.m */,
+			);
+			path = VideoBottomView;
+			sourceTree = "<group>";
+		};
+		58FB8F9620AC724600ED44B2 /* MAPReplyPage */ = {
+			isa = PBXGroup;
+			children = (
+				58FB8F9720AC725300ED44B2 /* Controller */,
+				58FB8F9820AC725E00ED44B2 /* View */,
+			);
+			name = MAPReplyPage;
+			path = "地图/Classes/MAPReplyPage";
+			sourceTree = SOURCE_ROOT;
+		};
+		58FB8F9720AC725300ED44B2 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				58FB8F9920AC728800ED44B2 /* MAPReplyViewController.h */,
+				58FB8F9A20AC728800ED44B2 /* MAPReplyViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		58FB8F9820AC725E00ED44B2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				58FB8F9C20AC729900ED44B2 /* MAPReplyView.h */,
+				58FB8F9D20AC729900ED44B2 /* MAPReplyView.m */,
+				58FB8F9F20AD12CB00ED44B2 /* MAPReplyButton.h */,
+				58FB8FA020AD12CB00ED44B2 /* MAPReplyButton.m */,
+				58FB8FA220AD7F8400ED44B2 /* TableView */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		58FB8FA220AD7F8400ED44B2 /* TableView */ = {
+			isa = PBXGroup;
+			children = (
+				58FB8FA620AD7FE800ED44B2 /* MAPMessageReplyHeaderView.h */,
+				58FB8FA720AD7FE800ED44B2 /* MAPMessageReplyHeaderView.m */,
+				58B18F9F20AF1591003EE273 /* MAPMessageReplyTableViewCell.h */,
+				58B18FA020AF1591003EE273 /* MAPMessageReplyTableViewCell.m */,
+			);
+			path = TableView;
+			sourceTree = "<group>";
+		};
 		72E6C665DDFBA310336292E1 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -770,6 +1192,11 @@
 		FBA77FEF028DA4A3968D3D1B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				58A62F1A2089DB730030D14B /* MobileCoreServices.framework */,
+				581832D120590ADA00A88D7E /* libTZImagePickerController.a */,
+				581832CB20590A8600A88D7E /* mp3lame.a */,
+				5818871520580B2800268C16 /* Lame */,
+				581832C62059093A00A88D7E /* Lame */,
 				DAA3F23248CD1BA9AC4EDFF9 /* libPods-地图.a */,
 			);
 			name = Frameworks;
@@ -893,12 +1320,16 @@
 				581D6496202D3E6400920812 /* Main.storyboard in Resources */,
 				58D413F5202986ED00277537 /* Assets.xcassets in Resources */,
 				58D414AB202989CB00277537 /* README.md in Resources */,
+				58E8033E208F60340062D694 /* 点.png in Resources */,
+				58B31D6C209FF3F30092AD11 /* sound.png in Resources */,
 				58D4149A202989CB00277537 /* README.md in Resources */,
 				58D41499202989CB00277537 /* LICENSE in Resources */,
+				58E80340208F60C20062D694 /* 暂停.png in Resources */,
 				58D414F320298A0500277537 /* voice.png in Resources */,
 				58D414F620298A0500277537 /* back.png in Resources */,
 				58D414F720298A0500277537 /* start.png in Resources */,
 				58D414E920298A0500277537 /* 定位.png in Resources */,
+				58FB8F9520AC6ED100ED44B2 /* 头像.JPG in Resources */,
 				58D414E820298A0500277537 /* weibo.png in Resources */,
 				58D414EA20298A0500277537 /* like.png in Resources */,
 				58D414F420298A0500277537 /* weChat.png in Resources */,
@@ -910,6 +1341,7 @@
 				581D64A3202EE55C00920812 /* cancel.png in Resources */,
 				58D414F520298A0500277537 /* priv.png in Resources */,
 				58D414EB20298A0500277537 /* comt.png in Resources */,
+				5852315B208A24B200925F56 /* 播放.png in Resources */,
 				58D414E520298A0500277537 /* info.png in Resources */,
 				58D414ED20298A0500277537 /* souRed.png in Resources */,
 			);
@@ -958,10 +1390,12 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-地图/Pods-地图-resources.sh",
 				"${PODS_ROOT}/BaiduMapKit/BaiduMapKit/BaiduMapAPI_Map.framework/Resources/mapapi.bundle",
+				"${PODS_ROOT}/TZImagePickerController/TZImagePickerController/TZImagePickerController/TZImagePickerController.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/mapapi.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/TZImagePickerController.bundle",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -990,41 +1424,65 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				58B18FA120AF1591003EE273 /* MAPMessageReplyTableViewCell.m in Sources */,
+				58B31F5820AB22DF0092AD11 /* YYTextAsyncLayer.m in Sources */,
+				58B31F4920AB22DF0092AD11 /* YYTextSelectionView.m in Sources */,
 				58D414A6202989CB00277537 /* AFURLSessionManager.m in Sources */,
+				58B31F5620AB22DF0092AD11 /* YYTextTransaction.m in Sources */,
 				58D4149B202989CB00277537 /* UIProgressView+AFNetworking.m in Sources */,
 				58D414B7202989CB00277537 /* UIImageView+WebCache.m in Sources */,
+				587F4D1E20501E7D003E33B1 /* MAPImageCollectionViewCell.m in Sources */,
+				58B31F5520AB22DF0092AD11 /* UIPasteboard+YYText.m in Sources */,
+				58B31F4B20AB22DF0092AD11 /* YYTextDebugOption.m in Sources */,
+				58B31F4A20AB22DF0092AD11 /* YYTextKeyboardManager.m in Sources */,
 				58D414BA202989CB00277537 /* UIView+WebCacheOperation.m in Sources */,
 				58D414C6202989CB00277537 /* MASViewAttribute.m in Sources */,
+				58B31F4D20AB22DF0092AD11 /* YYTextRunDelegate.m in Sources */,
+				58B31F0220AACFE70092AD11 /* MAPMessageHeaderView.m in Sources */,
 				58D414CE202989CB00277537 /* JSONModel+networking.m in Sources */,
+				58CC7A9D2086CB0100A706A2 /* MAPCommentViewController.m in Sources */,
 				58D4151D202990E900277537 /* MAPHomeView.m in Sources */,
 				58D414B3202989CB00277537 /* SDWebImagePrefetcher.m in Sources */,
 				58D414CB202989CB00277537 /* JSONModelClassProperty.m in Sources */,
 				58D414A1202989CB00277537 /* UIWebView+AFNetworking.m in Sources */,
 				58D4151120298E4800277537 /* MAPResultModel.m in Sources */,
 				58D414CA202989CB00277537 /* JSONModelError.m in Sources */,
+				58B31F5020AB22DF0092AD11 /* YYTextArchiver.m in Sources */,
 				58D414BC202989CB00277537 /* UIButton+WebCache.m in Sources */,
 				58D414C0202989CB00277537 /* MASConstraintMaker.m in Sources */,
+				58B31EFE20AACF7A0092AD11 /* MAPMessageCommentView.m in Sources */,
+				58B31F4420AB22DF0092AD11 /* YYTextContainerView.m in Sources */,
 				58D4149D202989CB00277537 /* AFNetworkActivityIndicatorManager.m in Sources */,
 				58D414C4202989CB00277537 /* MASConstraint.m in Sources */,
-				581D649F202E8D3100920812 /* MAPMessageTableViewCell.m in Sources */,
+				58FB8FA820AD7FE800ED44B2 /* MAPMessageReplyHeaderView.m in Sources */,
+				58B31D8020A1C1F90092AD11 /* MAPLoginView.m in Sources */,
 				58B17FC32046608F00105675 /* MAPAddCommentView.m in Sources */,
-				58B17FC62046933700105675 /* MAPAddTextCommentTableViewCell.m in Sources */,
 				58D4149C202989CB00277537 /* UIRefreshControl+AFNetworking.m in Sources */,
+				58B31F4E20AB22DF0092AD11 /* YYTextParser.m in Sources */,
 				581D649B202E8B3700920812 /* MAPCommentView.m in Sources */,
 				58D414A5202989CB00277537 /* AFHTTPSessionManager.m in Sources */,
 				58D414C1202989CB00277537 /* MASLayoutConstraint.m in Sources */,
 				58D414BD202989CB00277537 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
 				58D414BB202989CB00277537 /* UIView+WebCache.m in Sources */,
+				58FB8F9E20AC729900ED44B2 /* MAPReplyView.m in Sources */,
+				58B31F5720AB22DF0092AD11 /* UIView+YYText.m in Sources */,
 				58D414C7202989CB00277537 /* JSONValueTransformer.m in Sources */,
 				58D414CD202989CB00277537 /* JSONAPI.m in Sources */,
+				58B31F5120AB22DF0092AD11 /* YYTextRubyAnnotation.m in Sources */,
 				58D414B2202989CB00277537 /* SDWebImageCompat.m in Sources */,
+				58B31D6A209FE2F50092AD11 /* MAPAudioButton.m in Sources */,
 				58D414A7202989CB00277537 /* AFURLRequestSerialization.m in Sources */,
 				58D414B4202989CB00277537 /* SDImageCache.m in Sources */,
 				58D414A4202989CB00277537 /* AFURLResponseSerialization.m in Sources */,
 				58D413FB202986ED00277537 /* main.m in Sources */,
 				58D414C3202989CB00277537 /* View+MASAdditions.m in Sources */,
+				58B31F4320AB22DF0092AD11 /* YYTextMagnifier.m in Sources */,
+				58B31F5420AB22DF0092AD11 /* NSAttributedString+YYText.m in Sources */,
+				58499A7D209F2A7C0013C293 /* MAPAudioTableViewCell.m in Sources */,
 				58D4151720298F4000277537 /* MAPCoordinateModel.m in Sources */,
 				58D414A9202989CB00277537 /* AFSecurityPolicy.m in Sources */,
+				58B31D7D20A1C1E20092AD11 /* MAPLoginViewController.m in Sources */,
+				58E8033C208F53320062D694 /* MAPVideoBottomView.m in Sources */,
 				58D414C5202989CB00277537 /* MASViewConstraint.m in Sources */,
 				581D64A820415DA800920812 /* UILabel+LabelHeight.m in Sources */,
 				58D414C8202989CB00277537 /* JSONKeyMapper.m in Sources */,
@@ -1032,30 +1490,49 @@
 				58D414CC202989CB00277537 /* JSONHTTPClient.m in Sources */,
 				58D414BE202989CB00277537 /* ViewController+MASAdditions.m in Sources */,
 				58D4150D20298D3600277537 /* MAPAnnotationView.m in Sources */,
+				58B31F0820AAFA7D0092AD11 /* MAPMessageFooterView.m in Sources */,
+				58FB8F9B20AC728800ED44B2 /* MAPReplyViewController.m in Sources */,
 				58D414C2202989CB00277537 /* NSArray+MASAdditions.m in Sources */,
 				58D4149E202989CB00277537 /* UIImageView+AFNetworking.m in Sources */,
 				58D414AE202989CB00277537 /* UIImageView+HighlightedWebCache.m in Sources */,
 				58D4150020298BBC00277537 /* MAPHomeViewController.m in Sources */,
+				58B31F4720AB22DF0092AD11 /* YYTextLayout.m in Sources */,
+				58B31F5920AB22DF0092AD11 /* YYTextWeakProxy.m in Sources */,
 				58D414AD202989CB00277537 /* SDWebImageDecoder.m in Sources */,
+				58B31F4220AB22DF0092AD11 /* YYTextView.m in Sources */,
+				58B31F5220AB22DF0092AD11 /* YYTextUtilities.m in Sources */,
 				58D414C9202989CB00277537 /* JSONModel.m in Sources */,
 				58D414BF202989CB00277537 /* MASCompositeConstraint.m in Sources */,
+				58B31F4620AB22DF0092AD11 /* YYTextInput.m in Sources */,
 				58D414B9202989CB00277537 /* SDImageCacheConfig.m in Sources */,
 				58D414AF202989CB00277537 /* SDWebImageDownloader.m in Sources */,
+				58B31F4C20AB22DF0092AD11 /* YYLabel.m in Sources */,
+				58B31F4820AB22DF0092AD11 /* YYTextLine.m in Sources */,
 				58B17FBF2046604A00105675 /* MAPAddCommentViewController.m in Sources */,
 				58D414B5202989CB00277537 /* SDWebImageDownloaderOperation.m in Sources */,
+				58B31F0520AADAEB0092AD11 /* MAPMessageTableViewCell.m in Sources */,
+				58D211D520529EC1006FF394 /* MAPGetCommentButton.m in Sources */,
 				58D4151420298E7400277537 /* MAPGetPointModel.m in Sources */,
 				58D414B0202989CB00277537 /* UIImage+GIF.m in Sources */,
 				58D414B1202989CB00277537 /* UIImage+MultiFormat.m in Sources */,
 				58D414A8202989CB00277537 /* AFNetworkReachabilityManager.m in Sources */,
+				58FB8FA120AD12CB00ED44B2 /* MAPReplyButton.m in Sources */,
 				58D414A0202989CB00277537 /* UIActivityIndicatorView+AFNetworking.m in Sources */,
+				5889D61E2079F3B0002420FD /* MAPImageTableViewCell.m in Sources */,
+				58B31F0C20AB22190092AD11 /* MAPReplyModel.m in Sources */,
 				58D4149F202989CB00277537 /* UIButton+AFNetworking.m in Sources */,
+				58B31F5320AB22DF0092AD11 /* NSParagraphStyle+YYText.m in Sources */,
+				58D71BFF208C28050077A20E /* MAPVideoTableViewCell.m in Sources */,
 				58D414AC202989CB00277537 /* SDWebImageManager.m in Sources */,
 				58D4151A20298FB200277537 /* MAPCoordinateManager.m in Sources */,
 				58D413ED202986ED00277537 /* AppDelegate.m in Sources */,
 				58D414A2202989CB00277537 /* AFAutoPurgingImageCache.m in Sources */,
 				58D414B6202989CB00277537 /* NSData+ImageContentType.m in Sources */,
+				587F4D1B20501A62003E33B1 /* MAPAddCollectionViewCell.m in Sources */,
 				580EE586204507160068255E /* MAPAddPointManager.m in Sources */,
 				58D414A3202989CB00277537 /* AFImageDownloader.m in Sources */,
+				58B31F4520AB22DF0092AD11 /* YYTextEffectWindow.m in Sources */,
+				58B31F4F20AB22DF0092AD11 /* YYTextAttribute.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1095,6 +1572,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				58D413F7202986ED00277537 /* Base */,
+				58A62F192089D7F20030D14B /* zh-Hans */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -1106,6 +1584,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -1134,6 +1613,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_BITCODE = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -1161,6 +1641,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -1189,6 +1670,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_BITCODE = NO;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -1213,8 +1695,15 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 24VRK7V967;
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = "地图/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ThirdParty",
+					"$(PROJECT_DIR)/Lame",
+					"$(PROJECT_DIR)/ThirdParty/Lame",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "Imac.--";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1228,8 +1717,15 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 24VRK7V967;
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = "地图/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ThirdParty",
+					"$(PROJECT_DIR)/Lame",
+					"$(PROJECT_DIR)/ThirdParty/Lame",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "Imac.--";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";

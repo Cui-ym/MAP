@@ -23,6 +23,8 @@
 
 @property (nonatomic, strong) UILabel *nicknameLabel;
 
+@property (nonatomic, strong) UILabel *titleLabel;
+
 @property (nonatomic, assign) long commentCount;
 
 @property (nonatomic, assign) long likeCount;
