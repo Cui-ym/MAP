@@ -167,11 +167,10 @@
         
     } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
        
-        NSString *string = [[NSString alloc] initWithData:responseObject encoding:NSUTF8StringEncoding];
-        NSLog(@"response : %@", string);
-        
+        NSDictionary *responseJSON = [NSJSONSerialization JSONObjectWithData:responseObject options:NSJSONReadingMutableLeaves error:nil];
+        NSLog(@"responseJSON : %@", responseJSON);
         NSError *error;
-        MAPResultModel *result = [[MAPResultModel alloc] initWithDictionary:responseObject error:&error];
+        MAPResultModel *result = [[MAPResultModel alloc] initWithDictionary:responseJSON error:&error];
         NSLog(@"result:%@", result);
         if (result.status == 0) {
             succeedBlock(result);

@@ -100,7 +100,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "&#x5730;&#x56fe;/Classes/MAPHomePage/Controllers/AddCommentController/MAPAddCommentViewController.m"
-            timestampString = "549383790.717659"
+            timestampString = "549451675.526036"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "202"
@@ -164,7 +164,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "&#x5730;&#x56fe;/Classes/MAPHomePage/Controllers/AddCommentController/MAPAddCommentViewController.m"
-            timestampString = "549383790.718179"
+            timestampString = "549451675.526228"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "100"
@@ -180,7 +180,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "&#x5730;&#x56fe;/Classes/MAPHomePage/Controllers/AddCommentController/MAPAddCommentViewController.m"
-            timestampString = "549383790.71842"
+            timestampString = "549451675.526298"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "101"
@@ -212,7 +212,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "&#x5730;&#x56fe;/Classes/MAPHomePage/Controllers/AddCommentController/MAPAddCommentViewController.m"
-            timestampString = "549383790.718701"
+            timestampString = "549451675.526402"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "140"
@@ -228,12 +228,12 @@
                   moduleName = "&#x5730;&#x56fe;"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/cuiyiming/Desktop/%E9%A1%B9%E7%9B%AE/%E5%9C%B0%E5%9B%BE/%E5%9C%B0%E5%9B%BE/Classes/MAPHomePage/Controllers/AddCommentController/MAPAddCommentViewController.m"
-                  timestampString = "549383792.397839"
+                  timestampString = "549451675.676911"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "140"
                   endingLineNumber = "140"
-                  offsetFromSymbolStart = "584">
+                  offsetFromSymbolStart = "716">
                </Location>
                <Location
                   shouldBeEnabled = "Yes"
@@ -243,12 +243,12 @@
                   moduleName = "&#x5730;&#x56fe;"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/cuiyiming/Desktop/%E9%A1%B9%E7%9B%AE/%E5%9C%B0%E5%9B%BE/%E5%9C%B0%E5%9B%BE/Classes/MAPHomePage/Controllers/AddCommentController/MAPAddCommentViewController.m"
-                  timestampString = "549383792.402019"
+                  timestampString = "549451675.680859"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "140"
                   endingLineNumber = "140"
-                  offsetFromSymbolStart = "24">
+                  offsetFromSymbolStart = "19">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -260,7 +260,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "&#x5730;&#x56fe;/Classes/MAPHomePage/Controllers/AddCommentController/MAPAddCommentViewController.m"
-            timestampString = "549383790.718956"
+            timestampString = "549451675.526467"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "145"
@@ -323,7 +323,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "&#x5730;&#x56fe;/Classes/MAPHomePage/Controllers/AddCommentController/MAPAddCommentViewController.m"
-            timestampString = "549383790.719178"
+            timestampString = "549451675.526634"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "142"
@@ -339,12 +339,12 @@
                   moduleName = "&#x5730;&#x56fe;"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/cuiyiming/Desktop/%E9%A1%B9%E7%9B%AE/%E5%9C%B0%E5%9B%BE/%E5%9C%B0%E5%9B%BE/Classes/MAPHomePage/Controllers/AddCommentController/MAPAddCommentViewController.m"
-                  timestampString = "549383792.447246"
+                  timestampString = "549451675.690249"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "142"
                   endingLineNumber = "142"
-                  offsetFromSymbolStart = "128">
+                  offsetFromSymbolStart = "142">
                </Location>
                <Location
                   shouldBeEnabled = "Yes"
@@ -354,12 +354,12 @@
                   moduleName = "&#x5730;&#x56fe;"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/cuiyiming/Desktop/%E9%A1%B9%E7%9B%AE/%E5%9C%B0%E5%9B%BE/%E5%9C%B0%E5%9B%BE/Classes/MAPHomePage/Controllers/AddCommentController/MAPAddCommentViewController.m"
-                  timestampString = "549383792.451208"
+                  timestampString = "549451675.694591"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "142"
                   endingLineNumber = "142"
-                  offsetFromSymbolStart = "24">
+                  offsetFromSymbolStart = "12">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -451,7 +451,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "&#x5730;&#x56fe;/Classes/MAPHomePage/Controllers/AddCommentController/MAPAddCommentViewController.m"
-            timestampString = "549383790.719713"
+            timestampString = "549451675.526922"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "122"
@@ -467,7 +467,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "&#x5730;&#x56fe;/Classes/MAPHomePage/Controllers/AddCommentController/MAPAddCommentViewController.m"
-            timestampString = "549383790.719934"
+            timestampString = "549451675.527002"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "218"
@@ -483,7 +483,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "&#x5730;&#x56fe;/Classes/MAPHomePage/Controllers/AddCommentController/MAPAddCommentViewController.m"
-            timestampString = "549383790.7201459"
+            timestampString = "549451675.527071"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "285"
@@ -499,7 +499,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "&#x5730;&#x56fe;/Classes/MAPHomePage/Controllers/AddCommentController/MAPAddCommentViewController.m"
-            timestampString = "549383790.720337"
+            timestampString = "549451675.527136"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "287"
@@ -562,7 +562,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "&#x5730;&#x56fe;/Classes/MAPHomePage/Controllers/AddCommentController/MAPAddCommentViewController.m"
-            timestampString = "549383790.7205271"
+            timestampString = "549451675.527203"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "286"
@@ -578,7 +578,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "&#x5730;&#x56fe;/Classes/MAPHomePage/Controllers/AddCommentController/MAPAddCommentViewController.m"
-            timestampString = "549383790.720716"
+            timestampString = "549451675.527269"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "281"
@@ -610,43 +610,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "&#x5730;&#x56fe;/Classes/MAPReplyPage/View/MAPReplyView.m"
-            timestampString = "549297405.791198"
+            timestampString = "549442495.672365"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "125"
             endingLineNumber = "125"
-            landmarkName = "-calculateHeight"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "&#x5730;&#x56fe;/Classes/MAPReplyPage/View/MAPReplyView.m"
-            timestampString = "549297405.791262"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "135"
-            endingLineNumber = "135"
-            landmarkName = "MAPReplyView"
-            landmarkType = "3">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "&#x5730;&#x56fe;/Classes/MAPReplyPage/View/MAPReplyView.m"
-            timestampString = "549297405.791315"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "131"
-            endingLineNumber = "131"
             landmarkName = "-tableView:viewForHeaderInSection:"
             landmarkType = "7">
          </BreakpointContent>
@@ -658,11 +626,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "&#x5730;&#x56fe;/Classes/MAPReplyPage/View/MAPReplyView.m"
-            timestampString = "549297405.791366"
+            timestampString = "549442495.6724221"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "140"
-            endingLineNumber = "140"
+            startingLineNumber = "135"
+            endingLineNumber = "135"
             landmarkName = "-tableView:heightForHeaderInSection:"
             landmarkType = "7">
          </BreakpointContent>
@@ -674,12 +642,44 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "&#x5730;&#x56fe;/Classes/MAPReplyPage/View/MAPReplyView.m"
-            timestampString = "549297405.791415"
+            timestampString = "549442495.672493"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "131"
+            endingLineNumber = "131"
+            landmarkName = "-tableView:viewForFooterInSection:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "&#x5730;&#x56fe;/Classes/MAPReplyPage/View/MAPReplyView.m"
+            timestampString = "549442495.672614"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "140"
+            endingLineNumber = "140"
+            landmarkName = "-tableView:heightForRowAtIndexPath:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "&#x5730;&#x56fe;/Classes/MAPReplyPage/View/MAPReplyView.m"
+            timestampString = "549442495.6727"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "144"
             endingLineNumber = "144"
-            landmarkName = "-tableView:heightForRowAtIndexPath:"
+            landmarkName = "-tableView:heightForFooterInSection:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -706,27 +706,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "&#x5730;&#x56fe;/Classes/Manager/MAPAddPointManager.m"
-            timestampString = "549383790.721272"
+            timestampString = "549451675.527564"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "140"
             endingLineNumber = "140"
-            landmarkName = "-uploadWithPointId:Data:Type:Title:success:error:"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "&#x5730;&#x56fe;/Classes/Manager/MAPAddPointManager.m"
-            timestampString = "549383790.721463"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "171"
-            endingLineNumber = "171"
             landmarkName = "-uploadWithPointId:Data:Type:Title:success:error:"
             landmarkType = "7">
          </BreakpointContent>

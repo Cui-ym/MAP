@@ -13,6 +13,8 @@
 
 - (void)clickButton:(UIButton *)sender type:(NSString *)type timeLabel:(UILabel *)timeLabel;
 
+- (void)viewPicturesWithImageArray:(NSArray *)imageArray andNumber:(NSInteger)number;
+
 @end
 
 @interface MAPImageTableViewCell : UITableViewCell <UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout>

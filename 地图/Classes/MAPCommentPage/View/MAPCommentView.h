@@ -15,6 +15,11 @@
 @protocol MAPCommentViewDelegate <NSObject>
 
 @required
+// 隐藏状态栏
+- (void)hideNavigationController;
+
+// 显示状态栏
+- (void)dishideNavigationController;
 
 // 播放视频
 - (void)videoPlayWithUrl:(NSURL *)videoUrl;
@@ -37,11 +42,12 @@
 
 @property (nonatomic, strong) UIView *blurryView;
 
+@property (nonatomic, strong) UIButton *cancelButton;
+
 @property (nonatomic, strong) UIImageView *tempImageView;
 
 @property (nonatomic, strong) UITableView *commentTableView;
 
-@property (nonatomic, strong) UIButton *cancelButton;
 
 - (void)calculateHeight;
 

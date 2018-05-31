@@ -18,8 +18,19 @@
 #define OneimageCell @"OneimageCell"
 #define TwoimageCell @"TwoimageCell"
 #define ThreeimageCell @"ThreeimageCell"
-#define Width self.frame.size.width
-#define Height self.frame.size.height
+
+#define kWidth self.frame.size.width
+#define kHeight self.frame.size.height
+
+@interface MAPCommentView ()<UIScrollViewDelegate>
+
+@property (nonatomic, strong) UIScrollView *viewPictureScrollView;
+
+@property (nonatomic, strong) UIPageControl *pageControl;
+
+@property (nonatomic, strong) UIView *backgroundView;
+
+@end
 
 @implementation MAPCommentView
 
@@ -85,7 +96,7 @@
             [self initImageMutableArrayWithCommentNumber:i];
             
             [imageNumberArray addObject:[NSNumber numberWithInteger:imageMutableArray.count]];
-            CGFloat cellHeight = [MAPImageTableViewCell cellHeightWithImageArray:imageMutableArray size:CGSizeMake(self.frame.size.width, 0)];
+            CGFloat cellHeight = [MAPImageTableViewCell cellHeightWithImageArray:imageMutableArray size:CGSizeMake(kWidth, 0)];
             [cellHeightArray addObject:[NSNumber numberWithFloat:cellHeight]];
         }
         
@@ -95,7 +106,7 @@
         [_commentTableView registerClass:[MAPVideoTableViewCell class] forCellReuseIdentifier:videoCell];
         for (id obj in _commentArray) {
             NSDictionary *dictionary = [NSDictionary dictionaryWithDictionary:(NSDictionary *)[obj content]];
-            CGFloat height = [MAPVideoTableViewCell cellHeightWithComment:dictionary[@"title"] size:CGSizeMake(self.frame.size.width, 0)];
+            CGFloat height = [MAPVideoTableViewCell cellHeightWithComment:dictionary[@"title"] size:CGSizeMake(kWidth, 0)];
             [cellHeightArray addObject:[NSNumber numberWithFloat:height]];
         }
     } else if (_type == 2) {            // 语音评论
@@ -156,7 +167,7 @@
             } else {
                 num = [imageNumberArray[indexPath.row] intValue] / 3;
             }
-            imageCommentCell.imageCollectionView.frame = CGRectMake(Width * 0.25, 10 + Width * 0.14, Width * 0.6 + 10, (Width * 0.2 + 5) * num);
+            imageCommentCell.imageCollectionView.frame = CGRectMake(kWidth * 0.25, 10 + kWidth * 0.14, kWidth * 0.6 + 10, (kWidth * 0.2 + 5) * num);
         }
         if (imageMutableArray.count == 1) {        // 如果只有一张照片更新高度
             NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"http://47.95.207.40/markMapFile%@", imageMutableArray[0]]];
@@ -224,6 +235,65 @@
     imageMutableArray = [NSMutableArray arrayWithArray:dictionary[@"urls"]];
     title = dictionary[@"title"];
     NSLog(@"number:%d----%@", number, imageMutableArray);
+}
+
+// 浏览图片
+- (void)viewPicturesWithImageArray:(NSArray *)imageArray andNumber:(NSInteger)number {
+    if ([_delegate respondsToSelector:@selector(hideNavigationController)]) {
+        [self.delegate hideNavigationController];
+    }
+    // 设置背景颜色为黑色
+    NSInteger count = imageArray.count;
+    self.backgroundView = [[UIView alloc] initWithFrame:self.frame];
+    _backgroundView.backgroundColor = [UIColor blackColor];
+    [self addSubview:_backgroundView];
+    // 设置 scrollView 基本属性
+    self.viewPictureScrollView = [[UIScrollView alloc] initWithFrame:self.frame];
+    _viewPictureScrollView.contentSize = CGSizeMake(kWidth * count, kHeight);
+    _viewPictureScrollView.pagingEnabled = YES;
+    _viewPictureScrollView.delegate = self;
+    // 给 scrollView 添加照片
+    for (int i = 0; i < count; i++) {
+        UIImageView *imageView = [[UIImageView alloc] initWithFrame:CGRectMake(kWidth * i, 0, kWidth, kHeight)];
+        NSString *imageString = [NSString stringWithFormat:@"http://47.95.207.40/markMapFile%@", imageArray[i]];
+        NSURL *imageURL = [NSURL URLWithString:imageString];
+        [imageView sd_setImageWithURL:imageURL];
+        imageView.contentMode = UIViewContentModeScaleAspectFit;
+        [_viewPictureScrollView addSubview:imageView];
+    }
+    _viewPictureScrollView.contentOffset = CGPointMake(kWidth * number, 0);
+    [_backgroundView addSubview:_viewPictureScrollView];
+    // 设置 pageContrl
+    self.pageControl = [[UIPageControl alloc] initWithFrame:CGRectMake(0, kHeight - 20, kWidth, 20)];
+    self.pageControl.numberOfPages = imageArray.count;
+    self.pageControl.currentPage = number;
+    [self.pageControl addTarget:self action:@selector(pageTurn:) forControlEvents:UIControlEventValueChanged];
+    [self.backgroundView addSubview:_pageControl];
+    // 添加手势 点击结束浏览
+    UITapGestureRecognizer *tapGestureRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tapViewPictureScrollView)];
+    tapGestureRecognizer.numberOfTapsRequired = 1;
+    [_backgroundView addGestureRecognizer:tapGestureRecognizer];
+}
+
+// 结束浏览
+- (void)tapViewPictureScrollView {
+    if ([_delegate respondsToSelector:@selector(dishideNavigationController)]) {
+        [self.delegate dishideNavigationController];
+    }
+    [self.backgroundView removeFromSuperview];
+}
+
+// scrollViewDelegate
+- (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView {
+    CGPoint offset = scrollView.contentOffset;
+    int number = offset.x / kWidth;
+    _pageControl.currentPage = number;
+}
+
+// 点击 pageControl 翻页
+- (void)pageTurn:(UIPageControl *)pageControl {
+    NSInteger number = pageControl.currentPage;
+    _viewPictureScrollView.contentOffset = CGPointMake(kWidth * number, 0);
 }
 
 // 播放视频

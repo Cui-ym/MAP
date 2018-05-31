@@ -106,6 +106,10 @@
                 make.width.equalTo(self.contentView.mas_width).multipliedBy(0.4);
                 make.height.mas_equalTo(100.0);
             }];
+            self.photoCommentImageView.userInteractionEnabled = YES;
+            UITapGestureRecognizer *tapGestureRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tapPhotoCommentImageView)];
+            tapGestureRecognizer.numberOfTapsRequired = 1;
+            [self.photoCommentImageView addGestureRecognizer:tapGestureRecognizer];
             self.photoCommentImageView.backgroundColor = [UIColor whiteColor];
             self.photoCommentImageView.contentMode = UIViewContentModeScaleAspectFit;
         } else if (_imageCount == 2 || _imageCount == 4){
@@ -177,6 +181,13 @@
     [self.likeBtn addTarget:self action:@selector(clickLikeButton:) forControlEvents:UIControlEventTouchUpInside];
 }
 
+- (void)tapPhotoCommentImageView {
+    NSLog(@"点击了单张图片");
+    if ([self.delegate respondsToSelector:@selector(viewPicturesWithImageArray:andNumber:)]) {
+        [_delegate viewPicturesWithImageArray:_imageArray andNumber:0];
+    }
+}
+
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
     return _imageCount;
 }
@@ -200,6 +211,13 @@
     } else {
         CGSize size = CGSizeMake(Width * 0.2, Width * 0.2);
         return size;
+    }
+}
+
+- (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
+    NSLog(@"imageCount = %d, number = %ld", _imageCount, indexPath.item);
+    if ([self.delegate respondsToSelector:@selector(viewPicturesWithImageArray:andNumber:)]) {
+        [_delegate viewPicturesWithImageArray:_imageArray andNumber:indexPath.item];
     }
 }
 

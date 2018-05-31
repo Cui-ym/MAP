@@ -317,6 +317,14 @@ typedef NS_ENUM(NSInteger, PlayerStatus) {
     [self.navigationController pushViewController:_replyViewController animated:YES];
 }
 
+- (void)hideNavigationController {
+    self.navigationController.navigationBar.hidden = YES;
+}
+
+- (void)dishideNavigationController {
+    self.navigationController.navigationBar.hidden = NO;
+}
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
