@@ -10,4 +10,6 @@
 
 @interface MAPImageZoomView : UIScrollView
 
+@property (nonatomic, strong) UIImageView *imageView;
+
 @end

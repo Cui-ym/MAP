@@ -149,6 +149,7 @@
 		58E8033C208F53320062D694 /* MAPVideoBottomView.m in Sources */ = {isa = PBXBuildFile; fileRef = 58E8033B208F53320062D694 /* MAPVideoBottomView.m */; };
 		58E8033E208F60340062D694 /* 点.png in Resources */ = {isa = PBXBuildFile; fileRef = 58E8033D208F60340062D694 /* 点.png */; };
 		58E80340208F60C20062D694 /* 暂停.png in Resources */ = {isa = PBXBuildFile; fileRef = 58E8033F208F60C20062D694 /* 暂停.png */; };
+		58F2E1C820C930CF00491925 /* MAPImageZoomView.m in Sources */ = {isa = PBXBuildFile; fileRef = 58F2E1C720C930CF00491925 /* MAPImageZoomView.m */; };
 		58FB8F9520AC6ED100ED44B2 /* 头像.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 58FB8F9420AC6ED100ED44B2 /* 头像.JPG */; };
 		58FB8F9B20AC728800ED44B2 /* MAPReplyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 58FB8F9A20AC728800ED44B2 /* MAPReplyViewController.m */; };
 		58FB8F9E20AC729900ED44B2 /* MAPReplyView.m in Sources */ = {isa = PBXBuildFile; fileRef = 58FB8F9D20AC729900ED44B2 /* MAPReplyView.m */; };
@@ -445,6 +446,8 @@
 		58E8033B208F53320062D694 /* MAPVideoBottomView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MAPVideoBottomView.m; sourceTree = "<group>"; };
 		58E8033D208F60340062D694 /* 点.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "点.png"; path = "../../../../Downloads/点.png"; sourceTree = "<group>"; };
 		58E8033F208F60C20062D694 /* 暂停.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "暂停.png"; path = "../../../../Downloads/暂停.png"; sourceTree = "<group>"; };
+		58F2E1C620C930CF00491925 /* MAPImageZoomView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MAPImageZoomView.h; sourceTree = "<group>"; };
+		58F2E1C720C930CF00491925 /* MAPImageZoomView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MAPImageZoomView.m; sourceTree = "<group>"; };
 		58FB8F9420AC6ED100ED44B2 /* 头像.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "头像.JPG"; sourceTree = "<group>"; };
 		58FB8F9920AC728800ED44B2 /* MAPReplyViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MAPReplyViewController.h; sourceTree = "<group>"; };
 		58FB8F9A20AC728800ED44B2 /* MAPReplyViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MAPReplyViewController.m; sourceTree = "<group>"; };
@@ -511,6 +514,8 @@
 			children = (
 				581D6499202E8B3700920812 /* MAPCommentView.h */,
 				581D649A202E8B3700920812 /* MAPCommentView.m */,
+				58F2E1C620C930CF00491925 /* MAPImageZoomView.h */,
+				58F2E1C720C930CF00491925 /* MAPImageZoomView.m */,
 				58B31EFC20AACF7A0092AD11 /* MAPMessageCommentView.h */,
 				58B31EFD20AACF7A0092AD11 /* MAPMessageCommentView.m */,
 				58B31EFF20AACFD40092AD11 /* MessageTableView */,
@@ -1474,6 +1479,7 @@
 				58D414A7202989CB00277537 /* AFURLRequestSerialization.m in Sources */,
 				58D414B4202989CB00277537 /* SDImageCache.m in Sources */,
 				58D414A4202989CB00277537 /* AFURLResponseSerialization.m in Sources */,
+				58F2E1C820C930CF00491925 /* MAPImageZoomView.m in Sources */,
 				58D413FB202986ED00277537 /* main.m in Sources */,
 				58D414C3202989CB00277537 /* View+MASAdditions.m in Sources */,
 				58B31F4320AB22DF0092AD11 /* YYTextMagnifier.m in Sources */,

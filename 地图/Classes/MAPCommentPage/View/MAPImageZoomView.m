@@ -8,14 +8,38 @@
 
 #import "MAPImageZoomView.h"
 
+@interface MAPImageZoomView ()<UIScrollViewDelegate>
+
+@end;
+
 @implementation MAPImageZoomView
 
-/*
-// Only override drawRect: if you perform custom drawing.
-// An empty implementation adversely affects performance during animation.
-- (void)drawRect:(CGRect)rect {
-    // Drawing code
+- (instancetype)initWithFrame:(CGRect)frame {
+    self = [super initWithFrame:frame];
+    
+    if (self) {
+        self.delegate = self;
+        self.maximumZoomScale = 3.0;
+        
+        self.imageView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, self.frame.size.width, self.frame.size.height)];
+        _imageView.contentMode = UIViewContentModeScaleAspectFit;
+        [self addSubview:_imageView];
+        
+    }
+    
+    return self;
 }
-*/
+
+- (UIView *)viewForZoomingInScrollView:(UIScrollView *)scrollView {
+    return self.imageView;
+}
+
+- (void)scrollViewWillBeginZooming:(UIScrollView *)scrollView withView:(UIView *)view {
+    NSLog(@"开始缩放");
+}
+
+- (void)scrollViewDidEndZooming:(UIScrollView *)scrollView withView:(UIView *)view atScale:(CGFloat)scale {
+    NSLog(@"结束缩放");
+}
 
 @end

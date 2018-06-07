@@ -10,6 +10,8 @@
 
 @interface MAPLoginViewController ()
 
+//@property (nonatomic, strong) UIButton *
+
 @end
 
 @implementation MAPLoginViewController

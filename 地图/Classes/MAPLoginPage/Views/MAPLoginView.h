@@ -10,4 +10,23 @@
 
 @interface MAPLoginView : UIView
 
+@property (nonatomic, strong) UIButton *skipButton;
+
+@property (nonatomic, strong) UILabel *titleLabel;
+
+@property (nonatomic, strong) UIImageView *logoImageView;
+
+@property (nonatomic, strong) UILabel *nameLabel;
+
+@property (nonatomic, strong) UILabel *textLabel;
+
+@property (nonatomic, strong) UIButton *qqButton;
+
+@property (nonatomic, strong) UIButton *wechatButton;
+
+@property (nonatomic, strong) UIButton *weiboButton;
+
+@property (nonatomic, strong) UIButton *phoneButton;
+
+
 @end

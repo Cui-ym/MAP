@@ -7,6 +7,7 @@
 //
 
 #import "MAPCommentView.h"
+#import "MAPImageZoomView.h"
 #import "MAPCoordinateModel.h"
 #import "UIImageView+WebCache.h"
 #import "MAPMessageTableViewCell.h"
@@ -30,13 +31,15 @@
 
 @property (nonatomic, strong) UIView *backgroundView;
 
+@property (nonatomic, strong) MAPImageZoomView *imageZoomView;
+
 @end
 
 @implementation MAPCommentView
 
 {
     NSString *title;
-    UIImageView *imageView;
+//    UIImageView *imageView;
     NSMutableArray *cellHeightArray;
     NSMutableArray *imageMutableArray;
     NSMutableArray *imageNumberArray;
@@ -254,12 +257,12 @@
     _viewPictureScrollView.delegate = self;
     // 给 scrollView 添加照片
     for (int i = 0; i < count; i++) {
-        UIImageView *imageView = [[UIImageView alloc] initWithFrame:CGRectMake(kWidth * i, 0, kWidth, kHeight)];
+        _imageZoomView = [[MAPImageZoomView alloc] initWithFrame:CGRectMake(i * kWidth, 0, kWidth, kHeight)];
         NSString *imageString = [NSString stringWithFormat:@"http://47.95.207.40/markMapFile%@", imageArray[i]];
         NSURL *imageURL = [NSURL URLWithString:imageString];
-        [imageView sd_setImageWithURL:imageURL];
-        imageView.contentMode = UIViewContentModeScaleAspectFit;
-        [_viewPictureScrollView addSubview:imageView];
+        [_imageZoomView.imageView sd_setImageWithURL:imageURL];
+        
+        [_viewPictureScrollView addSubview:_imageZoomView];
     }
     _viewPictureScrollView.contentOffset = CGPointMake(kWidth * number, 0);
     [_backgroundView addSubview:_viewPictureScrollView];
@@ -320,51 +323,5 @@
     NSLog(@"%ld   %f", indexPath.row, [cellHeightArray[indexPath.row] floatValue]);
 }
 
-/*
- for (id obj in _commentArray) {
- imageMutableArray = [NSMutableArray array];
- NSString *imageString = [obj content];
- NSInteger location = 1;
- while (1) {
- location = [imageString rangeOfString:@"&"].location;
- if (location < 1000) {
- NSString *tempString = [imageString substringToIndex:location];
- [imageMutableArray addObject:tempString];
- imageString = [imageString substringFromIndex:location + 1];
- } else {
- [imageMutableArray addObject:imageString];
- break;
- }
- }
- 
- [imageNumberArray addObject:[NSNumber numberWithInteger:imageMutableArray.count]];
- if (imageMutableArray.count == 1) {
- self.tempImageView = [[UIImageView alloc] initWithFrame:self.frame];
- [self addSubview:_tempImageView];
- NSLog(@"%@  %@", _tempImageView, _tempImageView.image);
- NSString *string = [NSString stringWithFormat:@"http://47.95.207.40/markMapFile%@", imageMutableArray[0]];
- NSLog(@"%@", string);
- NSURL *url = [NSURL URLWithString:string];
- [_tempImageView sd_setImageWithURL:url placeholderImage:nil options:SDWebImageRetryFailed progress:^(NSInteger receivedSize, NSInteger expectedSize, NSURL * _Nullable targetURL) {
- 
- NSLog(@"下载进度--%f", (double)receivedSize / expectedSize);
- 
- } completed:^(UIImage * _Nullable image, NSError * _Nullable error, SDImageCacheType cacheType, NSURL * _Nullable imageURL) {
- NSLog(@"加载图片");
- [[SDImageCache sharedImageCache] storeImage:image forKey:string toDisk:YES completion:^{
- CGFloat cellHeight = [MAPImageTableViewCell cellHeightWithImageArray:imageMutableArray size:CGSizeMake(self.frame.size.width, 0)];
- [cellHeightArray addObject:[NSNumber numberWithFloat:cellHeight]];
- 
- }];
- [_tempImageView removeFromSuperview];
- }];
- NSLog(@"%@  %@", _tempImageView, _tempImageView.image);
- } else {
- CGFloat cellHeight = [MAPImageTableViewCell cellHeightWithImageArray:imageMutableArray size:CGSizeMake(self.frame.size.width, 0)];
- [cellHeightArray addObject:[NSNumber numberWithFloat:cellHeight]];
- }
- 
- }
- */
 
 @end

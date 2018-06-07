@@ -76,7 +76,7 @@
     _headImageView.layer.borderWidth = 1;
     _headImageView.layer.borderColor = [[UIColor whiteColor] CGColor];
     _headImageView.layer.cornerRadius = self.contentView.frame.size.width * 0.07;
-    _headImageView.backgroundColor = [UIColor yellowColor];
+    [_headImageView setImage:[UIImage imageNamed:@"头像.jpg"]];
     
     [self.nicknameLabel mas_makeConstraints:^(MASConstraintMaker *make) {
         make.left.equalTo(_headImageView.mas_right).offset(15);
